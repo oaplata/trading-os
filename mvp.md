@@ -1,5 +1,7 @@
 ## Visión del producto
 
+<!-- sTUy58XJr!xJAnZKKDS8 -->
+
 Un **Trading OS** (journal + portfolio + analytics) donde registras operaciones con **múltiples entradas y múltiples salidas (parciales)**, fees, slippage, notas, screenshots y tags; y obtienes un **dashboard** con evolución del capital, drawdowns, métricas, rachas, performance por mercado/estrategia/setup, y reportes exportables.
 
 ### Principios de diseño

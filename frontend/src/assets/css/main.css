@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Variables CSS para colores semánticos */
+    --color-profit: #10b981;
+    --color-loss: #ef4444;
+    --color-neutral: #eab308;
+    --color-info: #3b82f6;
+    
+    --color-background: #0a0a0a;
+    --color-background-secondary: #111111;
+    --color-background-tertiary: #1a1a1a;
+    --color-background-card: #151515;
+    
+    --color-border: #262626;
+    --color-border-light: #404040;
+    
+    --color-text: #fafafa;
+    --color-text-secondary: #a3a3a3;
+    --color-text-muted: #737373;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-text;
+    font-family: 'Inter', 'SF Pro Display', system-ui, sans-serif;
+  }
+
+  /* Números monoespaciados en tablas */
+  .mono-number {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Utilidades para componentes */
+  .card {
+    @apply bg-background-card border border-border rounded-lg p-6;
+  }
+
+  .input-base {
+    @apply w-full px-3 py-2 bg-background-secondary border border-border rounded-md 
+           text-text placeholder:text-text-muted 
+           focus:outline-none focus:ring-2 focus:ring-info focus:border-transparent
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-base {
+    @apply px-4 py-2 rounded-md font-medium transition-colors
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+}
+

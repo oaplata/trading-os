@@ -1,0 +1,455 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Modelos del Módulo A - Autenticación y Configuración Inicial
+
+model User {
+  id               String    @id @default(uuid())
+  email            String    @unique
+  passwordHash     String    @map("password_hash")
+  emailVerified    Boolean   @default(false) @map("email_verified")
+  twoFactorEnabled Boolean   @default(false) @map("two_factor_enabled")
+  twoFactorSecret  String?   @map("two_factor_secret")
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+  deletedAt        DateTime? @map("deleted_at")
+
+  // Relations
+  settings       UserSettings?
+  refreshTokens  RefreshToken[]
+  passwordResets PasswordResetToken[]
+  accounts       Account[]
+  cashflows      Cashflow[]
+  instruments    Instrument[]
+  strategies     Strategy[]
+  setups         Setup[]
+  rules          Rule[]
+  trades         Trade[]
+  fills          Fill[]
+  tradeChecklist TradeChecklist[]
+
+  @@map("users")
+}
+
+model UserSettings {
+  id                  String   @id @default(uuid())
+  userId              String   @unique
+  timezone            String   @default("America/Bogota")
+  baseCurrency        Currency @default(USD)
+  defaultRiskPercent  Decimal? @map("default_risk_percent") @db.Decimal(5, 2)
+  onboardingCompleted Boolean  @default(false) @map("onboarding_completed")
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_settings")
+}
+
+enum Currency {
+  COP
+  USD
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime @map("expires_at")
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+  ipAddress String?  @map("ip_address")
+  userAgent String?  @map("user_agent")
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([token])
+  @@map("refresh_tokens")
+}
+
+model PasswordResetToken {
+  id        String   @id @default(uuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime @map("expires_at")
+  used      Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([token])
+  @@map("password_reset_tokens")
+}
+
+// Modelo Account (Módulo B - Extendido)
+model Account {
+  id             String        @id @default(uuid())
+  userId         String
+  name           String
+  broker         String?
+  type           AccountType   @default(SPOT)
+  currency       String
+  status         AccountStatus @default(ACTIVE)
+  initialBalance Decimal?      @map("initial_balance") @db.Decimal(15, 2)
+  currentBalance Decimal?      @map("current_balance") @db.Decimal(15, 2)
+  notes          String?
+  closedAt       DateTime?     @map("closed_at")
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+
+  // Relations
+  user      User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cashflows Cashflow[]
+  snapshots AccountSnapshot[]
+  trades    Trade[]
+
+  @@index([userId])
+  @@index([status])
+  @@map("accounts")
+}
+
+enum AccountType {
+  SPOT
+  MARGIN
+  FUTURES
+  CFD
+}
+
+enum AccountStatus {
+  ACTIVE
+  INACTIVE
+  CLOSED
+}
+
+// Modelos del Módulo B - Cuentas, Capital y Cashflows
+
+model Cashflow {
+  id          String       @id @default(uuid())
+  accountId   String
+  userId      String
+  type        CashflowType @default(DEPOSIT)
+  amount      Decimal      @db.Decimal(15, 2)
+  currency    String
+  description String?
+  date        DateTime
+  category    String?
+  createdAt   DateTime     @default(now()) @map("created_at")
+  updatedAt   DateTime     @updatedAt @map("updated_at")
+
+  // Relations
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([accountId])
+  @@index([userId])
+  @@index([date])
+  @@index([type])
+  @@index([accountId, date])
+  @@map("cashflows")
+}
+
+enum CashflowType {
+  DEPOSIT
+  WITHDRAWAL
+  ADJUSTMENT
+  FEE
+}
+
+model AccountSnapshot {
+  id            String   @id @default(uuid())
+  accountId     String
+  date          DateTime
+  equity        Decimal  @db.Decimal(15, 2)
+  balance       Decimal  @db.Decimal(15, 2)
+  realizedPnL   Decimal  @map("realized_pnl") @db.Decimal(15, 2)
+  unrealizedPnL Decimal? @map("unrealized_pnl") @db.Decimal(15, 2)
+  drawdown      Decimal  @db.Decimal(5, 2)
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  // Relations
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@unique([accountId, date])
+  @@index([accountId])
+  @@index([date])
+  @@index([accountId, date])
+  @@map("account_snapshots")
+}
+
+// Modelos del Módulo C - Catálogo de Instrumentos (Multi-mercado)
+
+enum InstrumentType {
+  CRYPTO
+  STOCK
+  ETF
+  FOREX
+  FUTURES
+  OPTIONS
+}
+
+model Instrument {
+  id            String         @id @default(uuid())
+  userId        String
+  market        String
+  symbol        String
+  ticker        String // Computed: MARKET:SYMBOL (se genera automáticamente)
+  name          String
+  type          InstrumentType @default(CRYPTO)
+  currencyQuote String         @map("currency_quote")
+  tickSize      Decimal?       @map("tick_size") @db.Decimal(18, 8)
+  contractSize  Decimal?       @map("contract_size") @db.Decimal(18, 8)
+  isActive      Boolean        @default(true) @map("is_active")
+  notes         String?
+  createdAt     DateTime       @default(now()) @map("created_at")
+  updatedAt     DateTime       @updatedAt @map("updated_at")
+
+  // Relations
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  trades Trade[]
+
+  @@unique([userId, ticker])
+  @@index([userId])
+  @@index([market])
+  @@index([symbol])
+  @@index([type])
+  @@index([isActive])
+  @@index([userId, market])
+  @@index([userId, type])
+  @@map("instruments")
+}
+
+// Modelos del Módulo D - Estrategias, Setups y Reglas
+
+model Strategy {
+  id               String   @id @default(uuid())
+  userId           String
+  name             String
+  description      String?
+  targetMarket     String?  @map("target_market")
+  typicalTimeframe String?  @map("typical_timeframe")
+  isActive         Boolean  @default(true) @map("is_active")
+  notes            String?
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  setups Setup[]
+  trades Trade[]
+
+  @@index([userId])
+  @@index([targetMarket])
+  @@index([isActive])
+  @@index([userId, targetMarket])
+  @@map("strategies")
+}
+
+model Setup {
+  id            String   @id @default(uuid())
+  userId        String
+  strategyId    String?  @map("strategy_id")
+  name          String
+  description   String?
+  suggestedTags String[] @map("suggested_tags")
+  isActive      Boolean  @default(true) @map("is_active")
+  notes         String?
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  strategy Strategy? @relation(fields: [strategyId], references: [id], onDelete: SetNull)
+  rules    Rule[]
+  trades   Trade[]
+
+  @@index([userId])
+  @@index([strategyId])
+  @@index([isActive])
+  @@index([userId, strategyId])
+  @@map("setups")
+}
+
+model Rule {
+  id          String   @id @default(uuid())
+  userId      String
+  setupId     String
+  name        String
+  description String?
+  order       Int      @default(0)
+  isRequired  Boolean  @default(false) @map("is_required")
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  user           User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  setup          Setup            @relation(fields: [setupId], references: [id], onDelete: Cascade)
+  tradeChecklist TradeChecklist[]
+
+  @@index([userId])
+  @@index([setupId])
+  @@index([order])
+  @@index([isActive])
+  @@index([userId, setupId])
+  @@map("rules")
+}
+
+// Modelos del Módulo E - Operaciones (Trade Lifecycle)
+
+enum TradeSide {
+  LONG
+  SHORT
+}
+
+enum TradeType {
+  SPOT
+  MARGIN
+  FUTURES
+  OPTIONS
+}
+
+enum TradeStatus {
+  PLANNED
+  OPEN
+  CLOSED
+  CANCELED
+}
+
+enum FillType {
+  ENTRY
+  EXIT
+  FEE
+  ADJUSTMENT
+}
+
+enum TradeResult {
+  WIN
+  LOSS
+  BREAK_EVEN
+}
+
+enum TradeEmotion {
+  CALM
+  NEUTRAL
+  ANXIOUS
+  GREEDY
+}
+
+model Trade {
+  id                 String        @id @default(uuid())
+  userId             String
+  accountId          String
+  instrumentId       String
+  strategyId         String?       @map("strategy_id")
+  setupId            String?       @map("setup_id")
+  side               TradeSide
+  type               TradeType     @default(SPOT)
+  status             TradeStatus   @default(PLANNED)
+  timeframe          String?
+  plannedEntry       Decimal?      @map("planned_entry") @db.Decimal(18, 8)
+  plannedStopLoss    Decimal?      @map("planned_stop_loss") @db.Decimal(18, 8)
+  plannedTakeProfits Decimal[]     @map("planned_take_profits") @db.Decimal(18, 8)
+  riskPercent        Decimal?      @map("risk_percent") @db.Decimal(5, 2)
+  riskAmount         Decimal?      @map("risk_amount") @db.Decimal(15, 2)
+  plannedSize        Decimal?      @map("planned_size") @db.Decimal(18, 8)
+  tags               String[]
+  thesis             String?
+  screenshotUrl      String?       @map("screenshot_url")
+  openTime           DateTime?     @map("open_time")
+  closeTime          DateTime?     @map("close_time")
+  netPnL             Decimal?      @map("net_pnl") @db.Decimal(15, 2)
+  realizedPnL        Decimal?      @map("realized_pnl") @db.Decimal(15, 2)
+  unrealizedPnL      Decimal?      @map("unrealized_pnl") @db.Decimal(15, 2)
+  totalFees          Decimal       @default(0) @map("total_fees") @db.Decimal(15, 2)
+  rMultiple          Decimal?      @map("r_multiple") @db.Decimal(10, 4)
+  result             TradeResult?
+  emotion            TradeEmotion?
+  lessonLearned      String?       @map("lesson_learned")
+  checklistCompleted Boolean       @default(false) @map("checklist_completed")
+  notes              String?
+  createdAt          DateTime      @default(now()) @map("created_at")
+  updatedAt          DateTime      @updatedAt @map("updated_at")
+
+  // Relations
+  user       User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  account    Account          @relation(fields: [accountId], references: [id], onDelete: Restrict)
+  instrument Instrument       @relation(fields: [instrumentId], references: [id], onDelete: Restrict)
+  strategy   Strategy?        @relation(fields: [strategyId], references: [id], onDelete: SetNull)
+  setup      Setup?           @relation(fields: [setupId], references: [id], onDelete: SetNull)
+  fills      Fill[]
+  checklist  TradeChecklist[]
+
+  @@index([userId])
+  @@index([accountId])
+  @@index([instrumentId])
+  @@index([strategyId])
+  @@index([setupId])
+  @@index([status])
+  @@index([openTime])
+  @@index([closeTime])
+  @@index([userId, status])
+  @@index([userId, accountId])
+  @@index([userId, strategyId])
+  @@map("trades")
+}
+
+model Fill {
+  id          String   @id @default(uuid())
+  tradeId     String   @map("trade_id")
+  userId      String
+  type        FillType
+  quantity    Decimal? @db.Decimal(18, 8)
+  price       Decimal? @db.Decimal(18, 8)
+  fee         Decimal  @default(0) @db.Decimal(15, 2)
+  feeCurrency String   @default("USD") @map("fee_currency")
+  datetime    DateTime
+  notes       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  trade Trade @relation(fields: [tradeId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tradeId])
+  @@index([userId])
+  @@index([datetime])
+  @@index([tradeId, datetime])
+  @@map("fills")
+}
+
+model TradeChecklist {
+  id        String   @id @default(uuid())
+  tradeId   String   @map("trade_id")
+  ruleId    String   @map("rule_id")
+  userId    String
+  completed Boolean  @default(false)
+  notes     String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  trade Trade @relation(fields: [tradeId], references: [id], onDelete: Cascade)
+  rule  Rule  @relation(fields: [ruleId], references: [id], onDelete: Restrict)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([tradeId, ruleId])
+  @@index([tradeId])
+  @@index([ruleId])
+  @@index([userId])
+  @@map("trade_checklist")
+}
