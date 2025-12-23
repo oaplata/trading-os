@@ -1,0 +1,46 @@
+etf_ticker,etf_name,level,index_id,sector_id,industry_id,provider,weighting,liquidity,description
+SPY,SPDR S&P 500 ETF Trust,Index,IDX_SP500,,,State Street,Market Cap,Alta,S&P 500
+IVV,iShares Core S&P 500 ETF,Index,IDX_SP500,,,BlackRock,Market Cap,Alta,S&P 500
+VOO,Vanguard S&P 500 ETF,Index,IDX_SP500,,,Vanguard,Market Cap,Alta,S&P 500
+QQQ,Invesco QQQ Trust,Index,IDX_NDX,,,Invesco,Market Cap,Alta,Nasdaq 100
+QQQM,Invesco Nasdaq 100 ETF,Index,IDX_NDX,,,Invesco,Market Cap,Alta,Nasdaq 100 (low fee)
+ONEQ,Fidelity Nasdaq Composite ETF,Index,IDX_NASDAQ,,,Fidelity,Market Cap,Media,Nasdaq Composite
+IWM,iShares Russell 2000 ETF,Index,IDX_R2000,,,BlackRock,Market Cap,Alta,Russell 2000
+VTWO,Vanguard Russell 2000 ETF,Index,IDX_R2000,,,Vanguard,Market Cap,Media,Russell 2000
+IWB,iShares Russell 1000 ETF,Index,IDX_R1000,,,BlackRock,Market Cap,Media,Russell 1000
+IWV,iShares Russell 3000 ETF,Index,IDX_R3000,,,BlackRock,Market Cap,Media,Russell 3000
+VTI,Vanguard Total Stock Market ETF,Index,IDX_W5000,,,Vanguard,Market Cap,Alta,Total market USA
+DIA,SPDR Dow Jones Industrial Average ETF,Index,IDX_DJIA,,,State Street,Price Weighted,Alta,Dow Jones
+XLK,Technology Select Sector SPDR,Sector,,SEC_IT,,State Street,Market Cap,Alta,Tecnología
+VGT,Vanguard Information Technology ETF,Sector,,SEC_IT,,Vanguard,Market Cap,Alta,Tecnología
+XLF,Financial Select Sector SPDR,Sector,,SEC_FIN,,State Street,Market Cap,Alta,Financiero
+XLV,Health Care Select Sector SPDR,Sector,,SEC_HC,,State Street,Market Cap,Alta,Salud
+XLY,Consumer Discretionary Select Sector SPDR,Sector,,SEC_CD,,State Street,Market Cap,Alta,Consumo discrecional
+XLP,Consumer Staples Select Sector SPDR,Sector,,SEC_CS,,State Street,Market Cap,Alta,Consumo básico
+XLE,Energy Select Sector SPDR,Sector,,SEC_EN,,State Street,Market Cap,Alta,Energía
+XLI,Industrial Select Sector SPDR,Sector,,SEC_IND,,State Street,Market Cap,Alta,Industriales
+XLB,Materials Select Sector SPDR,Sector,,SEC_MAT,,State Street,Market Cap,Alta,Materiales
+XLC,Communication Services Select Sector SPDR,Sector,,SEC_COM,,State Street,Market Cap,Alta,Comunicación
+XLU,Utilities Select Sector SPDR,Sector,,SEC_UTIL,,State Street,Market Cap,Alta,Utilities
+XLRE,Real Estate Select Sector SPDR,Sector,,SEC_RE,,State Street,Market Cap,Alta,Real Estate
+SMH,VanEck Semiconductor ETF,Industry,,,IND_SEMI,VanEck,Market Cap,Alta,Semiconductores
+SOXX,iShares Semiconductor ETF,Industry,,,IND_SEMI,BlackRock,Market Cap,Alta,Semiconductores
+IGV,iShares Expanded Tech-Software ETF,Industry,,,IND_SOFT,BlackRock,Market Cap,Alta,Software
+XBI,SPDR S&P Biotech ETF,Industry,,,IND_BIOTECH,State Street,Equal Weight,Alta,Biotecnología
+IBB,iShares Biotechnology ETF,Industry,,,IND_BIOTECH,BlackRock,Market Cap,Alta,Biotecnología
+KBE,SPDR S&P Bank ETF,Industry,,,IND_BANKS,State Street,Equal Weight,Alta,Bancos
+KRE,SPDR S&P Regional Banking ETF,Industry,,,IND_BANKS,State Street,Equal Weight,Alta,Bancos regionales
+IAI,iShares U.S. Broker-Dealers ETF,Industry,,,IND_CAP_MKT,BlackRock,Market Cap,Media,Mercados de capitales
+KIE,SPDR S&P Insurance ETF,Industry,,,IND_INS,State Street,Equal Weight,Media,Seguros
+XRT,SPDR S&P Retail ETF,Industry,,,IND_SPEC_RET,State Street,Equal Weight,Alta,Retail
+ONLN,ProShares Online Retail ETF,Industry,,,IND_BROAD_RET,ProShares,Market Cap,Media,E-commerce
+PEJ,Invesco Leisure & Entertainment ETF,Industry,,,IND_HOTEL,Invesco,Market Cap,Media,Viajes y ocio
+XOP,SPDR S&P Oil & Gas Exploration ETF,Industry,,,IND_OIL_GAS,State Street,Equal Weight,Alta,E&P petróleo y gas
+OIH,VanEck Oil Services ETF,Industry,,,IND_EN_SERV,VanEck,Market Cap,Alta,Servicios petroleros
+ITA,iShares U.S. Aerospace & Defense ETF,Industry,,,IND_AERO,BlackRock,Market Cap,Alta,Aeroespacial y defensa
+IYT,iShares Transportation Average ETF,Industry,,,IND_AIR_FREIGHT,BlackRock,Price Weighted,Media,Transporte
+JETS,U.S. Global Jets ETF,Industry,,,IND_AIRLINES,US Global,Market Cap,Media,Aerolíneas
+XME,SPDR S&P Metals & Mining ETF,Industry,,,IND_MET_MIN,State Street,Equal Weight,Alta,Metales y minería
+VNQ,Vanguard Real Estate ETF,Industry,,,IND_REIT_EQ,Vanguard,Market Cap,Alta,REITs equity
+IYR,iShares U.S. Real Estate ETF,Industry,,,IND_REIT_EQ,BlackRock,Market Cap,Alta,REITs equity
+REM,iShares Mortgage Real Estate ETF,Industry,,,IND_REIT_MORT,BlackRock,Market Cap,Media,REITs hipotecarios
