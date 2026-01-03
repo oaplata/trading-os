@@ -1,0 +1,50 @@
+[
+  {
+    "ticker": "AUD/USD",
+    "name": "AUS Dollar/US Dollar"
+  },
+  {
+    "ticker": "EUR/USD",
+    "name": "Euro/US Dollar"
+  },
+  {
+    "ticker": "GBP/USD",
+    "name": "GB Pound/US Dollar"
+  },
+  {
+    "ticker": "NZD/USD",
+    "name": "NZ Dollar/US Dollar"
+  },
+  {
+    "ticker": "USD/BRL",
+    "name": "US Dollar/Brazilian Real"
+  },
+  {
+    "ticker": "USD/CAD",
+    "name": "US Dollar/CA Dollar"
+  },
+  {
+    "ticker": "USD/CHF",
+    "name": "US Dollar/CH Franc"
+  },
+  {
+    "ticker": "USD/CNY",
+    "name": "US Dollar/CN Yuan"
+  },
+  {
+    "ticker": "USD/HKD",
+    "name": "US Dollar/HK Dollar"
+  },
+  {
+    "ticker": "USD/JPY",
+    "name": "US Dollar/JP Yen"
+  },
+  {
+    "ticker": "USD/MXN",
+    "name": "US Dollar/Mexican Peso"
+  },
+  {
+    "ticker": "USD/NOK",
+    "name": "US Dollar/NO Krone"
+  }
+]

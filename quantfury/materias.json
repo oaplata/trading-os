@@ -1,0 +1,58 @@
+[
+  {
+    "ticker": "BRNH6",
+    "name": "Brent Crude Futures March 2026"
+  },
+  {
+    "ticker": "CLG6",
+    "name": "Crude Oil WTI February 2026"
+  },
+  {
+    "ticker": "GCG6",
+    "name": "Gold February 2026"
+  },
+  {
+    "ticker": "HGH6",
+    "name": "Copper March 2026"
+  },
+  {
+    "ticker": "HOG6",
+    "name": "Heating Oil February 2026"
+  },
+  {
+    "ticker": "KCH6",
+    "name": "Coffee C Futures March 2026"
+  },
+  {
+    "ticker": "NGG6",
+    "name": "Natural Gas February 2026"
+  },
+  {
+    "ticker": "PLJ6",
+    "name": "Platinum April 2026"
+  },
+  {
+    "ticker": "RBG6",
+    "name": "RBOB Gasoline February 2026"
+  },
+  {
+    "ticker": "SBH6",
+    "name": "Sugar No. 11 Futures March 2026"
+  },
+  {
+    "ticker": "SIH26",
+    "name": "Silver March 2026"
+  },
+  {
+    "ticker": "ZCH6",
+    "name": "Corn March 2026"
+  },
+  {
+    "ticker": "ZSH6",
+    "name": "Soybean March 2026"
+  },
+  {
+    "ticker": "ZWH6",
+    "name": "Chicago SRW Wheat March 2026"
+  }
+]

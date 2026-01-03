@@ -1,0 +1,302 @@
+[
+  {
+    "ticker": "ECH",
+    "name": "iShares MSCI Chile ETF"
+  },
+  {
+    "ticker": "ETHA",
+    "name": "iShares Ethereum Trust ETF"
+  },
+  {
+    "ticker": "ARGT",
+    "name": "Global X MSCI Argentina ETF"
+  },
+  {
+    "ticker": "ARKK",
+    "name": "ARK Innovation ETF"
+  },
+  {
+    "ticker": "BOIL",
+    "name": "ProShares Ultra Bloomberg Natural Gas"
+  },
+  {
+    "ticker": "BOTZ",
+    "name": "Global X Robotics & Artificial Intelligence ETF"
+  },
+  {
+    "ticker": "BOVA11",
+    "name": "iShares Ibovespa Index Fund"
+  },
+  {
+    "ticker": "COPX",
+    "name": "Global X Copper Miners ETF"
+  },
+  {
+    "ticker": "DIA",
+    "name": "SPDR Dow Jones Industrial Average ETF"
+  },
+  {
+    "ticker": "EEM",
+    "name": "iShares MSCI Emerging Markets ETF"
+  },
+  {
+    "ticker": "EWA",
+    "name": "iShares MSCI Australia ETF"
+  },
+  {
+    "ticker": "EWG",
+    "name": "iShares MSCI Germany ETF"
+  },
+  {
+    "ticker": "EWH",
+    "name": "iShares MSCI Hong Kong ETF"
+  },
+  {
+    "ticker": "EWJ",
+    "name": "iShares MSCI Japan ETF"
+  },
+  {
+    "ticker": "EWP",
+    "name": "iShares MSCI Spain ETF"
+  },
+  {
+    "ticker": "EWQ",
+    "name": "iShares MSCI France ETF"
+  },
+  {
+    "ticker": "EWT",
+    "name": "iShares MSCI Taiwan ETF"
+  },
+  {
+    "ticker": "EWU",
+    "name": "iShares MSCI United Kingdom ETF"
+  },
+  {
+    "ticker": "EWW",
+    "name": "iShares MSCI Mexico ETF"
+  },
+  {
+    "ticker": "EWY",
+    "name": "iShares MSCI South Korea ETF"
+  },
+  {
+    "ticker": "EWZ",
+    "name": "iShares MSCI Brazil ETF"
+  },
+  {
+    "ticker": "EZA",
+    "name": "iShares MSCI South Africa ETF"
+  },
+  {
+    "ticker": "FBTC",
+    "name": "Fidelity Wise Origin Bitcoin Trust"
+  },
+  {
+    "ticker": "FXI",
+    "name": "iShares China Large-Cap ETF"
+  },
+  {
+    "ticker": "GBTC",
+    "name": "Grayscale Bitcoin Trust (BTC)"
+  },
+  {
+    "ticker": "GDX",
+    "name": "VanEck Gold Miners ETF"
+  },
+  {
+    "ticker": "GLD",
+    "name": "SPDR Gold Trust"
+  },
+  {
+    "ticker": "IBIT",
+    "name": "iShares Bitcoin Trust ETF"
+  },
+  {
+    "ticker": "IEF",
+    "name": "iShare 7-10 Year Treasury Bond ETF"
+  },
+  {
+    "ticker": "ILF",
+    "name": "iShares Latin America 40 ETF"
+  },
+  {
+    "ticker": "INDA",
+    "name": "iShares MSCI India ETF"
+  },
+  {
+    "ticker": "IWM",
+    "name": "iShares Russell 2000 ETF"
+  },
+  {
+    "ticker": "IXN",
+    "name": "iShares Global Tech ETF"
+  },
+  {
+    "ticker": "IYW",
+    "name": "iShares US Technology ETF"
+  },
+  {
+    "ticker": "JEPI",
+    "name": "JPMorgan Equity Premium Income ETF"
+  },
+  {
+    "ticker": "JEPQ",
+    "name": "JPMorgan Nasdaq Equity Premium Income ETF"
+  },
+  {
+    "ticker": "LIT",
+    "name": "Global X Lithium & Battery Tech ETF"
+  },
+  {
+    "ticker": "MCHI",
+    "name": "iShares MSCI China ETF"
+  },
+  {
+    "ticker": "METV",
+    "name": "Roundhill Ball Metaverse ETF"
+  },
+  {
+    "ticker": "OIH",
+    "name": "VanEck Oil Services ETF"
+  },
+  {
+    "ticker": "PPLT",
+    "name": "abrdn Physical Platinum Shares ETF"
+  },
+  {
+    "ticker": "QQQ",
+    "name": "Invesco QQQ"
+  },
+  {
+    "ticker": "ROBO",
+    "name": "ROBO Global Robotics and Automation ETF"
+  },
+  {
+    "ticker": "ROBT",
+    "name": "First Trust Nasdaq AI and Robotics ETF"
+  },
+  {
+    "ticker": "SCHD",
+    "name": "Schwab U.S. Dividend Equity ETF"
+  },
+  {
+    "ticker": "SHY",
+    "name": "iShare 1-3 Year Treasury Bond ETF"
+  },
+  {
+    "ticker": "SIL",
+    "name": "Global X Silver Miners ETF"
+  },
+  {
+    "ticker": "SLV",
+    "name": "iShares Silver Trust"
+  },
+  {
+    "ticker": "SMH",
+    "name": "VanEck Semiconductor ETF"
+  },
+  {
+    "ticker": "SPY",
+    "name": "SPDR S&P 500 ETF"
+  },
+  {
+    "ticker": "TLT",
+    "name": "iShare 20+ Year Treasury Bond ETF"
+  },
+  {
+    "ticker": "TUR",
+    "name": "iShares MSCI Turkey ETF"
+  },
+  {
+    "ticker": "UNG",
+    "name": "United States Natural Gas Fund"
+  },
+  {
+    "ticker": "URA",
+    "name": "Global X Uranium ETF"
+  },
+  {
+    "ticker": "URNM",
+    "name": "Sprott Uranium Miners ETF"
+  },
+  {
+    "ticker": "USO",
+    "name": "United States Oil Fund"
+  },
+  {
+    "ticker": "UUP",
+    "name": "Invesco DB USD Index Bullish Fund"
+  },
+  {
+    "ticker": "VBR",
+    "name": "Vanguard Small-Cap Value ETF"
+  },
+  {
+    "ticker": "VCIT",
+    "name": "Vanguard Intermediate-Term Corporate Bond Index"
+  },
+  {
+    "ticker": "VGK",
+    "name": "Vanguard FTSE Europe ETF"
+  },
+  {
+    "ticker": "VNQ",
+    "name": "Vanguard Real Estate Index Fund"
+  },
+  {
+    "ticker": "VT",
+    "name": "Vanguard Total World Stock Index Fund"
+  },
+  {
+    "ticker": "WOOD",
+    "name": "iShares Global Timber & Forestry ETF"
+  },
+  {
+    "ticker": "XLB",
+    "name": "Materials Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLC",
+    "name": "Communication Services Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLE",
+    "name": "Energy Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLF",
+    "name": "Financial Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLI",
+    "name": "Industrial Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLK",
+    "name": "Technology Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLP",
+    "name": "Consumer Staples Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLRE",
+    "name": "Real Estate Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLU",
+    "name": "Utilities Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLV",
+    "name": "Health Care Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XLY",
+    "name": "Consumer Discretionary Select Sector SPDR Fund"
+  },
+  {
+    "ticker": "XME",
+    "name": "SPDR S&P Metals and Mining ETF"
+  }
+]

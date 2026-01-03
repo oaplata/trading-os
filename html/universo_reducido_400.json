@@ -1,0 +1,3551 @@
+{
+  "fecha_descarga": "2025-12-22T20:18:17.220691",
+  "total_tickers": 400,
+  "sectores": [
+    {
+      "nombre": "Servicios tecnol\u00f3gicos",
+      "industrias": [
+        {
+          "nombre": "Servicios y software de Internet",
+          "acciones": [
+            {
+              "nombre": "GOOGL",
+              "ticker": "GOOGL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/alphabet.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-GOOGL/",
+              "capitalizacion_mercado": "3,75 T USD"
+            },
+            {
+              "nombre": "META",
+              "ticker": "META",
+              "image_url": "https://s3-symbol-logo.tradingview.com/meta-platforms.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-META/",
+              "capitalizacion_mercado": "1,67 T USD"
+            },
+            {
+              "nombre": "NFLX",
+              "ticker": "NFLX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/netflix.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-NFLX/",
+              "capitalizacion_mercado": "426,01 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Software empaquetado",
+          "acciones": [
+            {
+              "nombre": "MSFT",
+              "ticker": "MSFT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/microsoft.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-MSFT/",
+              "capitalizacion_mercado": "3,6 T USD"
+            },
+            {
+              "nombre": "ORCL",
+              "ticker": "ORCL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/oracle.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ORCL/",
+              "capitalizacion_mercado": "569,97 B USD"
+            },
+            {
+              "nombre": "PLTR",
+              "ticker": "PLTR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/palantir.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PLTR/",
+              "capitalizacion_mercado": "462,34 B USD"
+            },
+            {
+              "nombre": "SAP",
+              "ticker": "SAP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sap.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SAP/",
+              "capitalizacion_mercado": "285,38 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios de tecnolog\u00eda de la informaci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "IBM",
+              "ticker": "IBM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/international-bus-mach.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-IBM/",
+              "capitalizacion_mercado": "283,03 B USD"
+            },
+            {
+              "nombre": "ACN",
+              "ticker": "ACN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/accenture.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ACN/",
+              "capitalizacion_mercado": "178,76 B USD"
+            },
+            {
+              "nombre": "INFY",
+              "ticker": "INFY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/infosys.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-INFY/",
+              "capitalizacion_mercado": "74,2 B USD"
+            },
+            {
+              "nombre": "NET",
+              "ticker": "NET",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cloudflare-inc.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NET/",
+              "capitalizacion_mercado": "70,78 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios de procesamiento de datos",
+          "acciones": [
+            {
+              "nombre": "MSCI",
+              "ticker": "MSCI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/msci.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MSCI/",
+              "capitalizacion_mercado": "43,33 B USD"
+            },
+            {
+              "nombre": "PAYX",
+              "ticker": "PAYX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/paychex.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PAYX/",
+              "capitalizacion_mercado": "41,34 B USD"
+            },
+            {
+              "nombre": "VRSK",
+              "ticker": "VRSK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/verisk-analytics.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-VRSK/",
+              "capitalizacion_mercado": "30,72 B USD"
+            },
+            {
+              "nombre": "TYL",
+              "ticker": "TYL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tyler-technologies.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TYL/",
+              "capitalizacion_mercado": "20,01 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Tecnolog\u00eda electr\u00f3nica",
+      "industrias": [
+        {
+          "nombre": "Semiconductores",
+          "acciones": [
+            {
+              "nombre": "NVDA",
+              "ticker": "NVDA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/nvidia.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-NVDA/",
+              "capitalizacion_mercado": "4,46 T USD"
+            },
+            {
+              "nombre": "AVGO",
+              "ticker": "AVGO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/broadcom.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-AVGO/",
+              "capitalizacion_mercado": "1,62 T USD"
+            },
+            {
+              "nombre": "TSM",
+              "ticker": "TSM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/taiwan-semiconductor.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TSM/",
+              "capitalizacion_mercado": "1,17 T USD"
+            },
+            {
+              "nombre": "ASML",
+              "ticker": "ASML",
+              "image_url": "https://s3-symbol-logo.tradingview.com/asml.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ASML/",
+              "capitalizacion_mercado": "403,3 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Equipos de telecomunicaciones",
+          "acciones": [
+            {
+              "nombre": "AAPL",
+              "ticker": "AAPL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/apple.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-AAPL/",
+              "capitalizacion_mercado": "4 T USD"
+            },
+            {
+              "nombre": "CSCO",
+              "ticker": "CSCO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cisco.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CSCO/",
+              "capitalizacion_mercado": "308,62 B USD"
+            },
+            {
+              "nombre": "MSI",
+              "ticker": "MSI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/motorola-solutions.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MSI/",
+              "capitalizacion_mercado": "62,08 B USD"
+            },
+            {
+              "nombre": "GRMN",
+              "ticker": "GRMN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/garmin-ltd.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GRMN/",
+              "capitalizacion_mercado": "39,58 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Aeroespacial y defensa",
+          "acciones": [
+            {
+              "nombre": "GE",
+              "ticker": "GE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ge-aerospace.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GE/",
+              "capitalizacion_mercado": "331,98 B USD"
+            },
+            {
+              "nombre": "RTX",
+              "ticker": "RTX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/raytheon.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RTX/",
+              "capitalizacion_mercado": "248,95 B USD"
+            },
+            {
+              "nombre": "BA",
+              "ticker": "BA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/boeing.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BA/",
+              "capitalizacion_mercado": "169,8 B USD"
+            },
+            {
+              "nombre": "HON",
+              "ticker": "HON",
+              "image_url": "https://s3-symbol-logo.tradingview.com/honeywell.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-HON/",
+              "capitalizacion_mercado": "124,41 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Perif\u00e9ricos inform\u00e1ticos",
+          "acciones": [
+            {
+              "nombre": "ANET",
+              "ticker": "ANET",
+              "image_url": "https://s3-symbol-logo.tradingview.com/arista-networks.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ANET/",
+              "capitalizacion_mercado": "164,63 B USD"
+            },
+            {
+              "nombre": "WDC",
+              "ticker": "WDC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/webster-financial.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-WDC/",
+              "capitalizacion_mercado": "60,43 B USD"
+            },
+            {
+              "nombre": "STX",
+              "ticker": "STX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/seagate.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-STX/",
+              "capitalizacion_mercado": "60,4 B USD"
+            },
+            {
+              "nombre": "SNDK",
+              "ticker": "SNDK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sandisk.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SNDK/",
+              "capitalizacion_mercado": "35,33 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Hardware de procesamiento inform\u00e1tico",
+          "acciones": [
+            {
+              "nombre": "SONY",
+              "ticker": "SONY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sony.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SONY/",
+              "capitalizacion_mercado": "154,67 B USD"
+            },
+            {
+              "nombre": "DELL",
+              "ticker": "DELL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dell.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DELL/",
+              "capitalizacion_mercado": "83,9 B USD"
+            },
+            {
+              "nombre": "HPE",
+              "ticker": "HPE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hewlett-packard-enterprise.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HPE/",
+              "capitalizacion_mercado": "32,96 B USD"
+            },
+            {
+              "nombre": "IONQ",
+              "ticker": "IONQ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ionq.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-IONQ/",
+              "capitalizacion_mercado": "19,08 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Componentes electr\u00f3nicos",
+          "acciones": [
+            {
+              "nombre": "APH",
+              "ticker": "APH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/amphenol.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-APH/",
+              "capitalizacion_mercado": "165,42 B USD"
+            },
+            {
+              "nombre": "GLW",
+              "ticker": "GLW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/corning.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GLW/",
+              "capitalizacion_mercado": "75,79 B USD"
+            },
+            {
+              "nombre": "CLS",
+              "ticker": "CLS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/celestica.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CLS/",
+              "capitalizacion_mercado": "35,3 B USD"
+            },
+            {
+              "nombre": "NVT",
+              "ticker": "NVT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/nvent-electric.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NVT/",
+              "capitalizacion_mercado": "16,59 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Instrumentos y equipos electr\u00f3nicos",
+          "acciones": [
+            {
+              "nombre": "EMR",
+              "ticker": "EMR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/emerson.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-EMR/",
+              "capitalizacion_mercado": "75,84 B USD"
+            },
+            {
+              "nombre": "KEYS",
+              "ticker": "KEYS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/keysight-technologies.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-KEYS/",
+              "capitalizacion_mercado": "35 B USD"
+            },
+            {
+              "nombre": "FTV",
+              "ticker": "FTV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fortive.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FTV/",
+              "capitalizacion_mercado": "17,68 B USD"
+            },
+            {
+              "nombre": "Q",
+              "ticker": "Q",
+              "image_url": "https://s3-symbol-logo.tradingview.com/qnity-electronics.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-Q/",
+              "capitalizacion_mercado": "17,15 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Fabricaci\u00f3n de equipos electr\u00f3nicos",
+          "acciones": [
+            {
+              "nombre": "VRT",
+              "ticker": "VRT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/vertiv-holdings.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-VRT/",
+              "capitalizacion_mercado": "63,56 B USD"
+            },
+            {
+              "nombre": "TER",
+              "ticker": "TER",
+              "image_url": "https://s3-symbol-logo.tradingview.com/teradyne.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-TER/",
+              "capitalizacion_mercado": "30,89 B USD"
+            },
+            {
+              "nombre": "FLEX",
+              "ticker": "FLEX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/flex.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FLEX/",
+              "capitalizacion_mercado": "23,59 B USD"
+            },
+            {
+              "nombre": "BE",
+              "ticker": "BE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/bloom-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BE/",
+              "capitalizacion_mercado": "21,82 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Comunicaciones inform\u00e1ticas",
+          "acciones": [
+            {
+              "nombre": "RDWR",
+              "ticker": "RDWR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/radware.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-RDWR/",
+              "capitalizacion_mercado": "1,06 B USD"
+            },
+            {
+              "nombre": "ALLT",
+              "ticker": "ALLT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/allot-ltd.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ALLT/",
+              "capitalizacion_mercado": "456,91 M USD"
+            },
+            {
+              "nombre": "SMRT",
+              "ticker": "SMRT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/smartrent.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SMRT/",
+              "capitalizacion_mercado": "387,86 M USD"
+            },
+            {
+              "nombre": "GNSS",
+              "ticker": "GNSS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/genasys.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-GNSS/",
+              "capitalizacion_mercado": "101,69 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Finanzas",
+      "industrias": [
+        {
+          "nombre": "Bancos principales",
+          "acciones": [
+            {
+              "nombre": "JPM",
+              "ticker": "JPM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/jpmorgan-chase.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-JPM/",
+              "capitalizacion_mercado": "879,54 B USD"
+            },
+            {
+              "nombre": "BAC",
+              "ticker": "BAC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/bank-of-america.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BAC/",
+              "capitalizacion_mercado": "408,06 B USD"
+            },
+            {
+              "nombre": "WFC",
+              "ticker": "WFC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/wells-fargo.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WFC/",
+              "capitalizacion_mercado": "295,95 B USD"
+            },
+            {
+              "nombre": "HSBC",
+              "ticker": "HSBC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hsbc.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HSBC/",
+              "capitalizacion_mercado": "268,08 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Seguros patrimoniales y de accidentes",
+          "acciones": [
+            {
+              "nombre": "BRK-B",
+              "ticker": "BRK-B",
+              "image_url": "https://s3-symbol-logo.tradingview.com/berkshire-hathaway.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BRK-B/",
+              "capitalizacion_mercado": "1,08 T USD"
+            },
+            {
+              "nombre": "CB",
+              "ticker": "CB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/chubb.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CB/",
+              "capitalizacion_mercado": "122,37 B USD"
+            },
+            {
+              "nombre": "TRV",
+              "ticker": "TRV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/travelers.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TRV/",
+              "capitalizacion_mercado": "65,05 B USD"
+            },
+            {
+              "nombre": "HIG",
+              "ticker": "HIG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hartford-financial-services-grp.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HIG/",
+              "capitalizacion_mercado": "38,89 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Rentas, alquiler y leasing",
+          "acciones": [
+            {
+              "nombre": "V",
+              "ticker": "V",
+              "image_url": "https://s3-symbol-logo.tradingview.com/visa.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-V/",
+              "capitalizacion_mercado": "673,28 B USD"
+            },
+            {
+              "nombre": "MA",
+              "ticker": "MA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mastercard.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MA/",
+              "capitalizacion_mercado": "516,98 B USD"
+            },
+            {
+              "nombre": "AXP",
+              "ticker": "AXP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/american-express.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AXP/",
+              "capitalizacion_mercado": "262,35 B USD"
+            },
+            {
+              "nombre": "RKT",
+              "ticker": "RKT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/rocket-companies.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RKT/",
+              "capitalizacion_mercado": "54,15 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Gestores de inversiones",
+          "acciones": [
+            {
+              "nombre": "MS",
+              "ticker": "MS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/morgan-stanley.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MS/",
+              "capitalizacion_mercado": "285,69 B USD"
+            },
+            {
+              "nombre": "BX",
+              "ticker": "BX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/blackstone.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BX/",
+              "capitalizacion_mercado": "190,08 B USD"
+            },
+            {
+              "nombre": "BLK",
+              "ticker": "BLK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/blackrock.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BLK/",
+              "capitalizacion_mercado": "177,53 B USD"
+            },
+            {
+              "nombre": "UBS",
+              "ticker": "UBS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ubs-group.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UBS/",
+              "capitalizacion_mercado": "145,05 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Brokers y bancos de inversi\u00f3n",
+          "acciones": [
+            {
+              "nombre": "GS",
+              "ticker": "GS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/golden-sachs-etf-trust-goldman.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GS/",
+              "capitalizacion_mercado": "269,64 B USD"
+            },
+            {
+              "nombre": "SCHW",
+              "ticker": "SCHW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/schwab.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SCHW/",
+              "capitalizacion_mercado": "180,2 B USD"
+            },
+            {
+              "nombre": "IBKR",
+              "ticker": "IBKR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/interactive-brokers-group.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-IBKR/",
+              "capitalizacion_mercado": "111,59 B USD"
+            },
+            {
+              "nombre": "HOOD",
+              "ticker": "HOOD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/robinhood.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-HOOD/",
+              "capitalizacion_mercado": "110,03 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Fideicomisos de inversi\u00f3n inmobiliaria",
+          "acciones": [
+            {
+              "nombre": "WELL",
+              "ticker": "WELL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/welltower-indrn.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WELL/",
+              "capitalizacion_mercado": "127,66 B USD"
+            },
+            {
+              "nombre": "PLD",
+              "ticker": "PLD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/prologis.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PLD/",
+              "capitalizacion_mercado": "120,99 B USD"
+            },
+            {
+              "nombre": "AMT",
+              "ticker": "AMT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/american-tower.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AMT/",
+              "capitalizacion_mercado": "80,71 B USD"
+            },
+            {
+              "nombre": "EQIX",
+              "ticker": "EQIX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/equinix.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-EQIX/",
+              "capitalizacion_mercado": "74,48 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Bancos regionales",
+          "acciones": [
+            {
+              "nombre": "IBN",
+              "ticker": "IBN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/icici-bank.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-IBN/",
+              "capitalizacion_mercado": "108,07 B USD"
+            },
+            {
+              "nombre": "CM",
+              "ticker": "CM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/canadian-imperial-bank-of-commerce.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CM/",
+              "capitalizacion_mercado": "85,56 B USD"
+            },
+            {
+              "nombre": "USB",
+              "ticker": "USB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/us-bancorp.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-USB/",
+              "capitalizacion_mercado": "85,29 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Seguro multiramo",
+          "acciones": [
+            {
+              "nombre": "PGR",
+              "ticker": "PGR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/progressive-ohio.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PGR/",
+              "capitalizacion_mercado": "133,32 B USD"
+            },
+            {
+              "nombre": "MFC",
+              "ticker": "MFC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/manulife.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MFC/",
+              "capitalizacion_mercado": "61,55 B USD"
+            },
+            {
+              "nombre": "AFL",
+              "ticker": "AFL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/aflac.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AFL/",
+              "capitalizacion_mercado": "57,68 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios de seguros y brokers",
+          "acciones": [
+            {
+              "nombre": "MMC",
+              "ticker": "MMC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/marsh-and-mclennan.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MMC/",
+              "capitalizacion_mercado": "90,88 B USD"
+            },
+            {
+              "nombre": "AON",
+              "ticker": "AON",
+              "image_url": "https://s3-symbol-logo.tradingview.com/aon.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AON/",
+              "capitalizacion_mercado": "76,4 B USD"
+            },
+            {
+              "nombre": "AJG",
+              "ticker": "AJG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/gallagher.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AJG/",
+              "capitalizacion_mercado": "66,32 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Desarrollo inmobiliario",
+          "acciones": [
+            {
+              "nombre": "CBRE",
+              "ticker": "CBRE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cbre-group.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CBRE/",
+              "capitalizacion_mercado": "48,82 B USD"
+            },
+            {
+              "nombre": "BEKE",
+              "ticker": "BEKE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ke-holdings.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BEKE/",
+              "capitalizacion_mercado": "18,65 B USD"
+            },
+            {
+              "nombre": "JLL",
+              "ticker": "JLL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/jones-lang-lasalle.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-JLL/",
+              "capitalizacion_mercado": "16,07 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Grupos financieros",
+          "acciones": [
+            {
+              "nombre": "RPRX",
+              "ticker": "RPRX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/royalty-pharma.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-RPRX/",
+              "capitalizacion_mercado": "22,43 B USD"
+            },
+            {
+              "nombre": "BMNR",
+              "ticker": "BMNR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/bitmine-immersion-technologies.svg",
+              "url_accion": "https://es.tradingview.com/symbols/AMEX-BMNR/",
+              "capitalizacion_mercado": "13,24 B USD"
+            },
+            {
+              "nombre": "MAIN",
+              "ticker": "MAIN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/main-street-capital-corporation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MAIN/",
+              "capitalizacion_mercado": "5,32 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Seguros de salud y vida",
+          "acciones": [
+            {
+              "nombre": "PRU",
+              "ticker": "PRU",
+              "image_url": "https://s3-symbol-logo.tradingview.com/prudential.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PRU/",
+              "capitalizacion_mercado": "40,19 B USD"
+            },
+            {
+              "nombre": "CRBG",
+              "ticker": "CRBG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/corebridge-financial-inc.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CRBG/",
+              "capitalizacion_mercado": "16,03 B USD"
+            },
+            {
+              "nombre": "EQH",
+              "ticker": "EQH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/axa-equitable-hldgs.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-EQH/",
+              "capitalizacion_mercado": "13,9 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Seguros especializados",
+          "acciones": [
+            {
+              "nombre": "FNF",
+              "ticker": "FNF",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fidelity.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FNF/",
+              "capitalizacion_mercado": "14,94 B USD"
+            },
+            {
+              "nombre": "ORI",
+              "ticker": "ORI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/old-republic-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ORI/",
+              "capitalizacion_mercado": "11,43 B USD"
+            },
+            {
+              "nombre": "ESNT",
+              "ticker": "ESNT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/essent.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ESNT/",
+              "capitalizacion_mercado": "6,37 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Cajas de ahorro",
+          "acciones": [
+            {
+              "nombre": "WBS",
+              "ticker": "WBS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/webster-financial.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WBS/",
+              "capitalizacion_mercado": "10,47 B USD"
+            },
+            {
+              "nombre": "TFSL",
+              "ticker": "TFSL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tfs-financial-corporation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-TFSL/",
+              "capitalizacion_mercado": "3,99 B USD"
+            },
+            {
+              "nombre": "WSFS",
+              "ticker": "WSFS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/wsfs-financial.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-WSFS/",
+              "capitalizacion_mercado": "3,14 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Tecnolog\u00edas sanitarias",
+      "industrias": [
+        {
+          "nombre": "Productos farmac\u00e9uticos: principales",
+          "acciones": [
+            {
+              "nombre": "LLY",
+              "ticker": "LLY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/eli-lilly.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LLY/",
+              "capitalizacion_mercado": "1,02 T USD"
+            },
+            {
+              "nombre": "JNJ",
+              "ticker": "JNJ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/johnson-and-johnson.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-JNJ/",
+              "capitalizacion_mercado": "499,5 B USD"
+            },
+            {
+              "nombre": "ABBV",
+              "ticker": "ABBV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/abbvie.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ABBV/",
+              "capitalizacion_mercado": "402,8 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Especialidades m\u00e9dicas",
+          "acciones": [
+            {
+              "nombre": "ABT",
+              "ticker": "ABT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/abbott.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ABT/",
+              "capitalizacion_mercado": "217,72 B USD"
+            },
+            {
+              "nombre": "TMO",
+              "ticker": "TMO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/thermo-fisher-scientific.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TMO/",
+              "capitalizacion_mercado": "216,3 B USD"
+            },
+            {
+              "nombre": "ISRG",
+              "ticker": "ISRG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/intuitive-surgical.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ISRG/",
+              "capitalizacion_mercado": "205,55 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Biotecnolog\u00eda",
+          "acciones": [
+            {
+              "nombre": "AMGN",
+              "ticker": "AMGN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/amgen.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-AMGN/",
+              "capitalizacion_mercado": "178,45 B USD"
+            },
+            {
+              "nombre": "GILD",
+              "ticker": "GILD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/gilead.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-GILD/",
+              "capitalizacion_mercado": "154,04 B USD"
+            },
+            {
+              "nombre": "ARGX",
+              "ticker": "ARGX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/argenx.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ARGX/",
+              "capitalizacion_mercado": "53,05 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Productos farmac\u00e9uticos: otros",
+          "acciones": [
+            {
+              "nombre": "RVMD",
+              "ticker": "RVMD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/revolution-medicines.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-RVMD/",
+              "capitalizacion_mercado": "15,58 B USD"
+            },
+            {
+              "nombre": "ABVX",
+              "ticker": "ABVX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/abivax-sa.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ABVX/",
+              "capitalizacion_mercado": "9,13 B USD"
+            },
+            {
+              "nombre": "CDTX",
+              "ticker": "CDTX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cidara-therapeutics.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CDTX/",
+              "capitalizacion_mercado": "6,94 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Productos farmac\u00e9uticos: gen\u00e9ricos",
+          "acciones": [
+            {
+              "nombre": "TEVA",
+              "ticker": "TEVA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/teva.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TEVA/",
+              "capitalizacion_mercado": "34,58 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comercio minorista",
+      "industrias": [
+        {
+          "nombre": "Internet para particulares",
+          "acciones": [
+            {
+              "nombre": "AMZN",
+              "ticker": "AMZN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/amazon.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-AMZN/",
+              "capitalizacion_mercado": "2,44 T USD"
+            },
+            {
+              "nombre": "BABA",
+              "ticker": "BABA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/alibaba.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BABA/",
+              "capitalizacion_mercado": "356,36 B USD"
+            },
+            {
+              "nombre": "MELI",
+              "ticker": "MELI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mercadolibre.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-MELI/",
+              "capitalizacion_mercado": "101,07 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Tiendas especializadas",
+          "acciones": [
+            {
+              "nombre": "WMT",
+              "ticker": "WMT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/walmart.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-WMT/",
+              "capitalizacion_mercado": "897,44 B USD"
+            },
+            {
+              "nombre": "COST",
+              "ticker": "COST",
+              "image_url": "https://s3-symbol-logo.tradingview.com/costco-wholesale.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-COST/",
+              "capitalizacion_mercado": "377,29 B USD"
+            },
+            {
+              "nombre": "CVNA",
+              "ticker": "CVNA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/carvana.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CVNA/",
+              "capitalizacion_mercado": "94,32 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Cadenas de mejoras para el hogar",
+          "acciones": [
+            {
+              "nombre": "HD",
+              "ticker": "HD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/home-depot.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HD/",
+              "capitalizacion_mercado": "344,84 B USD"
+            },
+            {
+              "nombre": "LOW",
+              "ticker": "LOW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/lowe-s.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LOW/",
+              "capitalizacion_mercado": "135,79 B USD"
+            },
+            {
+              "nombre": "BLDR",
+              "ticker": "BLDR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/builders-firstsource.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BLDR/",
+              "capitalizacion_mercado": "11,46 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Venta al por menor de ropa y calzado",
+          "acciones": [
+            {
+              "nombre": "TJX",
+              "ticker": "TJX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tjx-cos.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TJX/",
+              "capitalizacion_mercado": "173,88 B USD"
+            },
+            {
+              "nombre": "ROST",
+              "ticker": "ROST",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ross-stores.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ROST/",
+              "capitalizacion_mercado": "58,44 B USD"
+            },
+            {
+              "nombre": "TPR",
+              "ticker": "TPR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tapestry.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TPR/",
+              "capitalizacion_mercado": "26,39 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Grandes almacenes",
+          "acciones": [
+            {
+              "nombre": "PDD",
+              "ticker": "PDD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/pinduoduo.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PDD/",
+              "capitalizacion_mercado": "152,45 B USD"
+            },
+            {
+              "nombre": "DDS",
+              "ticker": "DDS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dillards.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DDS/",
+              "capitalizacion_mercado": "9,57 B USD"
+            },
+            {
+              "nombre": "OLLI",
+              "ticker": "OLLI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ollies-bargain-outlet.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-OLLI/",
+              "capitalizacion_mercado": "6,77 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Cadenas de farmacias",
+          "acciones": [
+            {
+              "nombre": "CVS",
+              "ticker": "CVS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cvs-health.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CVS/",
+              "capitalizacion_mercado": "99,47 B USD"
+            },
+            {
+              "nombre": "GRDN",
+              "ticker": "GRDN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/guardian-pharmacy-services.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GRDN/",
+              "capitalizacion_mercado": "1,99 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Alimentaci\u00f3n al por menor",
+          "acciones": [
+            {
+              "nombre": "KR",
+              "ticker": "KR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/kroger.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-KR/",
+              "capitalizacion_mercado": "39,42 B USD"
+            },
+            {
+              "nombre": "ACI",
+              "ticker": "ACI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/albertsons.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ACI/",
+              "capitalizacion_mercado": "9,59 B USD"
+            },
+            {
+              "nombre": "SFM",
+              "ticker": "SFM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sprouts-farmers-markets.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SFM/",
+              "capitalizacion_mercado": "7,81 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Tiendas de descuento",
+          "acciones": [
+            {
+              "nombre": "DG",
+              "ticker": "DG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dollar-general.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DG/",
+              "capitalizacion_mercado": "30,27 B USD"
+            },
+            {
+              "nombre": "DLTR",
+              "ticker": "DLTR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dollar-tree.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-DLTR/",
+              "capitalizacion_mercado": "24,36 B USD"
+            },
+            {
+              "nombre": "FIVE",
+              "ticker": "FIVE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/five-below.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FIVE/",
+              "capitalizacion_mercado": "10,29 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Tiendas de electr\u00f3nica y electrodom\u00e9sticos",
+          "acciones": [
+            {
+              "nombre": "BBY",
+              "ticker": "BBY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/best-buy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BBY/",
+              "capitalizacion_mercado": "14,94 B USD"
+            },
+            {
+              "nombre": "GME",
+              "ticker": "GME",
+              "image_url": "https://s3-symbol-logo.tradingview.com/gamestop.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GME/",
+              "capitalizacion_mercado": "9,74 B USD"
+            },
+            {
+              "nombre": "PLBL",
+              "ticker": "PLBL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/polibeli-ltd.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PLBL/",
+              "capitalizacion_mercado": "4,06 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Distribuci\u00f3n de cat\u00e1logos y especialidades",
+          "acciones": [
+            {
+              "nombre": "YJ",
+              "ticker": "YJ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/yunji-american-depository-shares.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-YJ/",
+              "capitalizacion_mercado": "6,95 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Fabricaci\u00f3n de productos",
+      "industrias": [
+        {
+          "nombre": "Maquinaria industrial",
+          "acciones": [
+            {
+              "nombre": "LRCX",
+              "ticker": "LRCX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/lam-research.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-LRCX/",
+              "capitalizacion_mercado": "220,13 B USD"
+            },
+            {
+              "nombre": "AMAT",
+              "ticker": "AMAT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/applied-materials.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-AMAT/",
+              "capitalizacion_mercado": "205,38 B USD"
+            },
+            {
+              "nombre": "PH",
+              "ticker": "PH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/parker-hannifin.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PH/",
+              "capitalizacion_mercado": "111,86 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Maquinaria agr\u00edcola, de construcci\u00f3n y camiones",
+          "acciones": [
+            {
+              "nombre": "CAT",
+              "ticker": "CAT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/caterpillar.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CAT/",
+              "capitalizacion_mercado": "272,56 B USD"
+            },
+            {
+              "nombre": "DE",
+              "ticker": "DE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/deere.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DE/",
+              "capitalizacion_mercado": "126,78 B USD"
+            },
+            {
+              "nombre": "PCAR",
+              "ticker": "PCAR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/paccar.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PCAR/",
+              "capitalizacion_mercado": "59,25 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Productos el\u00e9ctricos",
+          "acciones": [
+            {
+              "nombre": "GEV",
+              "ticker": "GEV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ge-verona.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GEV/",
+              "capitalizacion_mercado": "179,56 B USD"
+            },
+            {
+              "nombre": "ETN",
+              "ticker": "ETN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/eaton.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ETN/",
+              "capitalizacion_mercado": "124,44 B USD"
+            },
+            {
+              "nombre": "AME",
+              "ticker": "AME",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ametek.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AME/",
+              "capitalizacion_mercado": "47,47 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Piezas de automoci\u00f3n: Fabricante de equipamiento original",
+          "acciones": [
+            {
+              "nombre": "ITW",
+              "ticker": "ITW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/illinois-tool-works.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ITW/",
+              "capitalizacion_mercado": "72,98 B USD"
+            },
+            {
+              "nombre": "CMI",
+              "ticker": "CMI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cummins.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CMI/",
+              "capitalizacion_mercado": "71,68 B USD"
+            },
+            {
+              "nombre": "MGA",
+              "ticker": "MGA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/magna-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MGA/",
+              "capitalizacion_mercado": "15,3 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Productos de la construcci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "WSO",
+              "ticker": "WSO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/watsco.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WSO/",
+              "capitalizacion_mercado": "14,13 B USD"
+            },
+            {
+              "nombre": "WSO.B",
+              "ticker": "WSO.B",
+              "image_url": "https://s3-symbol-logo.tradingview.com/watsco.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WSO.B/",
+              "capitalizacion_mercado": "14,02 B USD"
+            },
+            {
+              "nombre": "CSL",
+              "ticker": "CSL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/carlisle-cos.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CSL/",
+              "capitalizacion_mercado": "13,84 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Conglomerados industriales",
+          "acciones": [
+            {
+              "nombre": "MMM",
+              "ticker": "MMM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/3m.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MMM/",
+              "capitalizacion_mercado": "85 B USD"
+            },
+            {
+              "nombre": "RLX",
+              "ticker": "RLX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/rlx-technology.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RLX/",
+              "capitalizacion_mercado": "2,79 B USD"
+            },
+            {
+              "nombre": "HI",
+              "ticker": "HI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hillenbrand.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HI/",
+              "capitalizacion_mercado": "2,24 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Fabricaci\u00f3n de metales",
+          "acciones": [
+            {
+              "nombre": "RBC",
+              "ticker": "RBC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/rbc-bearings.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RBC/",
+              "capitalizacion_mercado": "14,54 B USD"
+            },
+            {
+              "nombre": "MLI",
+              "ticker": "MLI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mueller-industries.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MLI/",
+              "capitalizacion_mercado": "13,03 B USD"
+            },
+            {
+              "nombre": "VMI",
+              "ticker": "VMI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/valmont-industries.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-VMI/",
+              "capitalizacion_mercado": "8,2 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Fabricaciones diversas",
+          "acciones": [
+            {
+              "nombre": "WMS",
+              "ticker": "WMS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/advanced-drainage-system.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WMS/",
+              "capitalizacion_mercado": "11,61 B USD"
+            },
+            {
+              "nombre": "AWI",
+              "ticker": "AWI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/armstrong-world-industries.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AWI/",
+              "capitalizacion_mercado": "8,16 B USD"
+            },
+            {
+              "nombre": "BRC",
+              "ticker": "BRC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/brady.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BRC/",
+              "capitalizacion_mercado": "3,83 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Suministros y equipos de oficina",
+          "acciones": [
+            {
+              "nombre": "HNI",
+              "ticker": "HNI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hni.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HNI/",
+              "capitalizacion_mercado": "3,04 B USD"
+            },
+            {
+              "nombre": "MLKN",
+              "ticker": "MLKN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/herman-miller.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-MLKN/",
+              "capitalizacion_mercado": "1,25 B USD"
+            },
+            {
+              "nombre": "ACCO",
+              "ticker": "ACCO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/acco-brands.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ACCO/",
+              "capitalizacion_mercado": "330,8 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Consumibles perecederos",
+      "industrias": [
+        {
+          "nombre": "Cuidado personal y dom\u00e9stico",
+          "acciones": [
+            {
+              "nombre": "PG",
+              "ticker": "PG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/procter-and-gamble.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PG/",
+              "capitalizacion_mercado": "333,43 B USD"
+            },
+            {
+              "nombre": "UL",
+              "ticker": "UL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/unilever.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UL/",
+              "capitalizacion_mercado": "142,65 B USD"
+            },
+            {
+              "nombre": "CL",
+              "ticker": "CL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/colgate-palmolive.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CL/",
+              "capitalizacion_mercado": "63,71 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Bebidas: Sin Alcohol",
+          "acciones": [
+            {
+              "nombre": "KO",
+              "ticker": "KO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/coca-cola.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-KO/",
+              "capitalizacion_mercado": "302,02 B USD"
+            },
+            {
+              "nombre": "MNST",
+              "ticker": "MNST",
+              "image_url": "https://s3-symbol-logo.tradingview.com/monster-beverage.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-MNST/",
+              "capitalizacion_mercado": "75,88 B USD"
+            },
+            {
+              "nombre": "CCEP",
+              "ticker": "CCEP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/coca-cola.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CCEP/",
+              "capitalizacion_mercado": "41,12 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Tabaco",
+          "acciones": [
+            {
+              "nombre": "PM",
+              "ticker": "PM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/philip-morris.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PM/",
+              "capitalizacion_mercado": "248,6 B USD"
+            },
+            {
+              "nombre": "BTI",
+              "ticker": "BTI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/british-american-tobacco.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BTI/",
+              "capitalizacion_mercado": "123,1 B USD"
+            },
+            {
+              "nombre": "MO",
+              "ticker": "MO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/altria.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MO/",
+              "capitalizacion_mercado": "98,39 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Comida: Especialidades y dulces",
+          "acciones": [
+            {
+              "nombre": "PEP",
+              "ticker": "PEP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/pepsico.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PEP/",
+              "capitalizacion_mercado": "201,07 B USD"
+            },
+            {
+              "nombre": "MDLZ",
+              "ticker": "MDLZ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mondelez.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-MDLZ/",
+              "capitalizacion_mercado": "70,08 B USD"
+            },
+            {
+              "nombre": "HSY",
+              "ticker": "HSY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hershey.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HSY/",
+              "capitalizacion_mercado": "37,8 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Bebidas: Alcoh\u00f3licas",
+          "acciones": [
+            {
+              "nombre": "BUD",
+              "ticker": "BUD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/anheuser-busch-inbev.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BUD/",
+              "capitalizacion_mercado": "128,89 B USD"
+            },
+            {
+              "nombre": "DEO",
+              "ticker": "DEO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/diageo.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DEO/",
+              "capitalizacion_mercado": "49,92 B USD"
+            },
+            {
+              "nombre": "ABEV",
+              "ticker": "ABEV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ambev.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ABEV/",
+              "capitalizacion_mercado": "37,75 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Ropa y calzado",
+          "acciones": [
+            {
+              "nombre": "NKE",
+              "ticker": "NKE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/nike.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NKE/",
+              "capitalizacion_mercado": "84,58 B USD"
+            },
+            {
+              "nombre": "LULU",
+              "ticker": "LULU",
+              "image_url": "https://s3-symbol-logo.tradingview.com/lululemon-athletica.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-LULU/",
+              "capitalizacion_mercado": "26 B USD"
+            },
+            {
+              "nombre": "RL",
+              "ticker": "RL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ralph-lauren.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RL/",
+              "capitalizacion_mercado": "22,28 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Alimentaci\u00f3n: principales diversificados",
+          "acciones": [
+            {
+              "nombre": "KHC",
+              "ticker": "KHC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/kraft-heinz.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-KHC/",
+              "capitalizacion_mercado": "28,59 B USD"
+            },
+            {
+              "nombre": "GIS",
+              "ticker": "GIS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/general-mills.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GIS/",
+              "capitalizacion_mercado": "25,29 B USD"
+            },
+            {
+              "nombre": "CAG",
+              "ticker": "CAG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/conagra-brands.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CAG/",
+              "capitalizacion_mercado": "8,26 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Comida: Carne, pescado y l\u00e1cteos",
+          "acciones": [
+            {
+              "nombre": "TSN",
+              "ticker": "TSN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tyson-foods.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TSN/",
+              "capitalizacion_mercado": "20,29 B USD"
+            },
+            {
+              "nombre": "JBS",
+              "ticker": "JBS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/jbs-nv-dr2.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-JBS/",
+              "capitalizacion_mercado": "15,46 B USD"
+            },
+            {
+              "nombre": "HRL",
+              "ticker": "HRL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hormel-foods.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HRL/",
+              "capitalizacion_mercado": "13,27 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Art\u00edculos diversos de consumo",
+          "acciones": [
+            {
+              "nombre": "CENT",
+              "ticker": "CENT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/central-garden-and-pet.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CENT/",
+              "capitalizacion_mercado": "1,86 B USD"
+            },
+            {
+              "nombre": "CENTA",
+              "ticker": "CENTA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/central-garden-and-pet.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CENTA/",
+              "capitalizacion_mercado": "1,85 B USD"
+            },
+            {
+              "nombre": "DOGZ",
+              "ticker": "DOGZ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dogness-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-DOGZ/",
+              "capitalizacion_mercado": "144,03 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Bienes de consumo duraderos",
+      "industrias": [
+        {
+          "nombre": "Veh\u00edculos de motor",
+          "acciones": [
+            {
+              "nombre": "TSLA",
+              "ticker": "TSLA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tesla.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-TSLA/",
+              "capitalizacion_mercado": "1,63 T USD"
+            },
+            {
+              "nombre": "TM",
+              "ticker": "TM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/toyota.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TM/",
+              "capitalizacion_mercado": "282,84 B USD"
+            },
+            {
+              "nombre": "RACE",
+              "ticker": "RACE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ferrari.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RACE/",
+              "capitalizacion_mercado": "88,72 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Construcci\u00f3n de viviendas",
+          "acciones": [
+            {
+              "nombre": "DHI",
+              "ticker": "DHI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dr-horton.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DHI/",
+              "capitalizacion_mercado": "42,46 B USD"
+            },
+            {
+              "nombre": "LEN.B",
+              "ticker": "LEN.B",
+              "image_url": "https://s3-symbol-logo.tradingview.com/lennar.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LEN.B/",
+              "capitalizacion_mercado": "27,19 B USD"
+            },
+            {
+              "nombre": "LEN",
+              "ticker": "LEN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/lennar.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LEN/",
+              "capitalizacion_mercado": "26,98 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Productos de ocio",
+          "acciones": [
+            {
+              "nombre": "AS",
+              "ticker": "AS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/amer-sports-inc.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AS/",
+              "capitalizacion_mercado": "21,11 B USD"
+            },
+            {
+              "nombre": "HAS",
+              "ticker": "HAS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hasbro.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-HAS/",
+              "capitalizacion_mercado": "11,45 B USD"
+            },
+            {
+              "nombre": "MAT",
+              "ticker": "MAT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mattel.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-MAT/",
+              "capitalizacion_mercado": "6,15 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Herramientas y hardware",
+          "acciones": [
+            {
+              "nombre": "SNA",
+              "ticker": "SNA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/snap-on.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SNA/",
+              "capitalizacion_mercado": "18,2 B USD"
+            },
+            {
+              "nombre": "ALLE",
+              "ticker": "ALLE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/allegion-plc.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ALLE/",
+              "capitalizacion_mercado": "13,83 B USD"
+            },
+            {
+              "nombre": "SWK",
+              "ticker": "SWK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/stanley-black-and-decker.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SWK/",
+              "capitalizacion_mercado": "11,65 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Electr\u00f3nica y electrodom\u00e9sticos",
+          "acciones": [
+            {
+              "nombre": "SN",
+              "ticker": "SN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sharkninja.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SN/",
+              "capitalizacion_mercado": "16,52 B USD"
+            },
+            {
+              "nombre": "WHR",
+              "ticker": "WHR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/whirlpool.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WHR/",
+              "capitalizacion_mercado": "4,07 B USD"
+            },
+            {
+              "nombre": "SONO",
+              "ticker": "SONO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sonos.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SONO/",
+              "capitalizacion_mercado": "2,17 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Muebles para el hogar",
+          "acciones": [
+            {
+              "nombre": "SGI",
+              "ticker": "SGI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tempur-sealy-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SGI/",
+              "capitalizacion_mercado": "18,89 B USD"
+            },
+            {
+              "nombre": "ARHS",
+              "ticker": "ARHS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/arhaus.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ARHS/",
+              "capitalizacion_mercado": "1,67 B USD"
+            },
+            {
+              "nombre": "LZB",
+              "ticker": "LZB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/la-z-boy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LZB/",
+              "capitalizacion_mercado": "1,57 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Mercado de repuestos de automoci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "LKQ",
+              "ticker": "LKQ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/lkq.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-LKQ/",
+              "capitalizacion_mercado": "7,74 B USD"
+            },
+            {
+              "nombre": "DORM",
+              "ticker": "DORM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dorman-products.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-DORM/",
+              "capitalizacion_mercado": "3,82 B USD"
+            },
+            {
+              "nombre": "GT",
+              "ticker": "GT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/goodyear-tire-and-rubber.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-GT/",
+              "capitalizacion_mercado": "2,52 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Otras especialidades de consumo",
+          "acciones": [
+            {
+              "nombre": "MSA",
+              "ticker": "MSA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/msa-safety.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MSA/",
+              "capitalizacion_mercado": "6,32 B USD"
+            },
+            {
+              "nombre": "FWDI",
+              "ticker": "FWDI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/forward-industries.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FWDI/",
+              "capitalizacion_mercado": "600,89 M USD"
+            },
+            {
+              "nombre": "ZEPP",
+              "ticker": "ZEPP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/zepp-health.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ZEPP/",
+              "capitalizacion_mercado": "398,86 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios al consumidor",
+      "industrias": [
+        {
+          "nombre": "Restaurantes",
+          "acciones": [
+            {
+              "nombre": "MCD",
+              "ticker": "MCD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mcdonalds.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MCD/",
+              "capitalizacion_mercado": "225,2 B USD"
+            },
+            {
+              "nombre": "SBUX",
+              "ticker": "SBUX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/starbucks.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SBUX/",
+              "capitalizacion_mercado": "97,98 B USD"
+            },
+            {
+              "nombre": "CMG",
+              "ticker": "CMG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/chipotle-mexican-grill.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CMG/",
+              "capitalizacion_mercado": "50,14 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Empresas de cruceros, hoteles y resorts",
+          "acciones": [
+            {
+              "nombre": "ABNB",
+              "ticker": "ABNB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/airbnb.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ABNB/",
+              "capitalizacion_mercado": "84,3 B USD"
+            },
+            {
+              "nombre": "MAR",
+              "ticker": "MAR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/marriott.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-MAR/",
+              "capitalizacion_mercado": "84,2 B USD"
+            },
+            {
+              "nombre": "RCL",
+              "ticker": "RCL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/royal-caribbean-cruises.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RCL/",
+              "capitalizacion_mercado": "82,01 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Otros servicios de consumo",
+          "acciones": [
+            {
+              "nombre": "BKNG",
+              "ticker": "BKNG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/booking.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-BKNG/",
+              "capitalizacion_mercado": "174,29 B USD"
+            },
+            {
+              "nombre": "CTAS",
+              "ticker": "CTAS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cintas.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CTAS/",
+              "capitalizacion_mercado": "77,15 B USD"
+            },
+            {
+              "nombre": "TCOM",
+              "ticker": "TCOM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ctrip-com-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-TCOM/",
+              "capitalizacion_mercado": "47,43 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Cine y entretenimiento",
+          "acciones": [
+            {
+              "nombre": "DIS",
+              "ticker": "DIS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/walt-disney.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DIS/",
+              "capitalizacion_mercado": "200,63 B USD"
+            },
+            {
+              "nombre": "TKO",
+              "ticker": "TKO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tko.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TKO/",
+              "capitalizacion_mercado": "42,04 B USD"
+            },
+            {
+              "nombre": "LYV",
+              "ticker": "LYV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/live-nation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LYV/",
+              "capitalizacion_mercado": "32,92 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "TV por sat\u00e9lite o cable",
+          "acciones": [
+            {
+              "nombre": "CMCSA",
+              "ticker": "CMCSA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/comcast.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CMCSA/",
+              "capitalizacion_mercado": "106,62 B USD"
+            },
+            {
+              "nombre": "CMCSV",
+              "ticker": "CMCSV",
+              "image_url": "",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CMCSV/",
+              "capitalizacion_mercado": "106,43 B USD"
+            },
+            {
+              "nombre": "WBD",
+              "ticker": "WBD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/warner-bros-discovery.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-WBD/",
+              "capitalizacion_mercado": "71,25 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Casinos y juegos",
+          "acciones": [
+            {
+              "nombre": "LVS",
+              "ticker": "LVS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/las-vegas-sands.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LVS/",
+              "capitalizacion_mercado": "45,24 B USD"
+            },
+            {
+              "nombre": "FLUT",
+              "ticker": "FLUT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/flutter-entertainment.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FLUT/",
+              "capitalizacion_mercado": "39,26 B USD"
+            },
+            {
+              "nombre": "WYNN",
+              "ticker": "WYNN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/wynn-resorts.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-WYNN/",
+              "capitalizacion_mercado": "13,1 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Radiodifusi\u00f3n",
+          "acciones": [
+            {
+              "nombre": "FOXA",
+              "ticker": "FOXA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fox-corporation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FOXA/",
+              "capitalizacion_mercado": "30,71 B USD"
+            },
+            {
+              "nombre": "FOX",
+              "ticker": "FOX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fox-corporation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FOX/",
+              "capitalizacion_mercado": "30,38 B USD"
+            },
+            {
+              "nombre": "SIRI",
+              "ticker": "SIRI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sirius-xm.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SIRI/",
+              "capitalizacion_mercado": "6,96 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Publicaci\u00f3n: peri\u00f3dicos",
+          "acciones": [
+            {
+              "nombre": "NWSA",
+              "ticker": "NWSA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/news-corporation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-NWSA/",
+              "capitalizacion_mercado": "15,45 B USD"
+            },
+            {
+              "nombre": "NWS",
+              "ticker": "NWS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/news-corporation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-NWS/",
+              "capitalizacion_mercado": "15,39 B USD"
+            },
+            {
+              "nombre": "NYT",
+              "ticker": "NYT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/new-york-times.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NYT/",
+              "capitalizacion_mercado": "11,45 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Publicaci\u00f3n: Libros y revistas",
+          "acciones": [
+            {
+              "nombre": "PSO",
+              "ticker": "PSO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/pearson.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PSO/",
+              "capitalizacion_mercado": "8,95 B USD"
+            },
+            {
+              "nombre": "WLY",
+              "ticker": "WLY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/wiley-john-and-sons.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WLY/",
+              "capitalizacion_mercado": "1,66 B USD"
+            },
+            {
+              "nombre": "WLYB",
+              "ticker": "WLYB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/wiley-john-and-sons.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WLYB/",
+              "capitalizacion_mercado": "1,58 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Conglomerados de medios de comunicaci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "SPHR",
+              "ticker": "SPHR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/madison-square-garden.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SPHR/",
+              "capitalizacion_mercado": "3,37 B USD"
+            },
+            {
+              "nombre": "THH",
+              "ticker": "THH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tryhard-limited.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-THH/",
+              "capitalizacion_mercado": "974,4 M USD"
+            },
+            {
+              "nombre": "FTRK",
+              "ticker": "FTRK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fast-track.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FTRK/",
+              "capitalizacion_mercado": "17,15 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Minerales energ\u00e9ticos",
+      "industrias": [
+        {
+          "nombre": "Petrolera integrada",
+          "acciones": [
+            {
+              "nombre": "XOM",
+              "ticker": "XOM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/exxon.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-XOM/",
+              "capitalizacion_mercado": "498,26 B USD"
+            },
+            {
+              "nombre": "CVX",
+              "ticker": "CVX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/chevron.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CVX/",
+              "capitalizacion_mercado": "301,63 B USD"
+            },
+            {
+              "nombre": "SHEL",
+              "ticker": "SHEL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/shell.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SHEL/",
+              "capitalizacion_mercado": "206,16 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Producci\u00f3n de petr\u00f3leo y gas",
+          "acciones": [
+            {
+              "nombre": "COP",
+              "ticker": "COP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/conocophillips.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-COP/",
+              "capitalizacion_mercado": "115,3 B USD"
+            },
+            {
+              "nombre": "FANG",
+              "ticker": "FANG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/diamondback.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FANG/",
+              "capitalizacion_mercado": "42,54 B USD"
+            },
+            {
+              "nombre": "WDS",
+              "ticker": "WDS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/woodside-petroleum.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WDS/",
+              "capitalizacion_mercado": "28,61 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Refinado de petr\u00f3leo/comercializaci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "E",
+              "ticker": "E",
+              "image_url": "https://s3-symbol-logo.tradingview.com/eni.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-E/",
+              "capitalizacion_mercado": "56,66 B USD"
+            },
+            {
+              "nombre": "PSX",
+              "ticker": "PSX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/phillips-66.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PSX/",
+              "capitalizacion_mercado": "51,97 B USD"
+            },
+            {
+              "nombre": "VLO",
+              "ticker": "VLO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/valero-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-VLO/",
+              "capitalizacion_mercado": "49,88 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Carb\u00f3n",
+          "acciones": [
+            {
+              "nombre": "HCC",
+              "ticker": "HCC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/warrior-met-coal.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HCC/",
+              "capitalizacion_mercado": "4,58 B USD"
+            },
+            {
+              "nombre": "CNR",
+              "ticker": "CNR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/consol-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CNR/",
+              "capitalizacion_mercado": "4,54 B USD"
+            },
+            {
+              "nombre": "BTU",
+              "ticker": "BTU",
+              "image_url": "https://s3-symbol-logo.tradingview.com/peabody-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BTU/",
+              "capitalizacion_mercado": "3,73 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios p\u00fablicos",
+      "industrias": [
+        {
+          "nombre": "El\u00e9ctricas",
+          "acciones": [
+            {
+              "nombre": "NEE",
+              "ticker": "NEE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/nextera-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NEE/",
+              "capitalizacion_mercado": "166,69 B USD"
+            },
+            {
+              "nombre": "CEG",
+              "ticker": "CEG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/constellation-energy-cad-hedged-cibc-cdr.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CEG/",
+              "capitalizacion_mercado": "111,74 B USD"
+            },
+            {
+              "nombre": "SO",
+              "ticker": "SO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/southern.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SO/",
+              "capitalizacion_mercado": "94,39 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Distribuidores de gas",
+          "acciones": [
+            {
+              "nombre": "SRE",
+              "ticker": "SRE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sempra-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SRE/",
+              "capitalizacion_mercado": "57,49 B USD"
+            },
+            {
+              "nombre": "TRGP",
+              "ticker": "TRGP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/targa-resources.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TRGP/",
+              "capitalizacion_mercado": "39,21 B USD"
+            },
+            {
+              "nombre": "ATO",
+              "ticker": "ATO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/atmos-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ATO/",
+              "capitalizacion_mercado": "27,06 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Empresas de suministro de agua",
+          "acciones": [
+            {
+              "nombre": "AWK",
+              "ticker": "AWK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/american-water-works.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AWK/",
+              "capitalizacion_mercado": "25,69 B USD"
+            },
+            {
+              "nombre": "SBS",
+              "ticker": "SBS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sabesp.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SBS/",
+              "capitalizacion_mercado": "16,81 B USD"
+            },
+            {
+              "nombre": "WTRG",
+              "ticker": "WTRG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/essential-utilities.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WTRG/",
+              "capitalizacion_mercado": "10,91 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Generaci\u00f3n de energ\u00eda alternativa",
+          "acciones": [
+            {
+              "nombre": "TLN",
+              "ticker": "TLN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/talen-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-TLN/",
+              "capitalizacion_mercado": "17,31 B USD"
+            },
+            {
+              "nombre": "BIP",
+              "ticker": "BIP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/brookfield.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BIP/",
+              "capitalizacion_mercado": "16,15 B USD"
+            },
+            {
+              "nombre": "CWEN.A",
+              "ticker": "CWEN.A",
+              "image_url": "https://s3-symbol-logo.tradingview.com/clearway-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CWEN.A/",
+              "capitalizacion_mercado": "6,76 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Minerales no energ\u00e9ticos",
+      "industrias": [
+        {
+          "nombre": "Metales preciosos",
+          "acciones": [
+            {
+              "nombre": "NEM",
+              "ticker": "NEM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/newmont.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NEM/",
+              "capitalizacion_mercado": "114,45 B USD"
+            },
+            {
+              "nombre": "AEM",
+              "ticker": "AEM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/agnico-eagle-mines.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AEM/",
+              "capitalizacion_mercado": "90,43 B USD"
+            },
+            {
+              "nombre": "B",
+              "ticker": "B",
+              "image_url": "https://s3-symbol-logo.tradingview.com/barrick-gold.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-B/",
+              "capitalizacion_mercado": "76,93 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Otros minerales y metales",
+          "acciones": [
+            {
+              "nombre": "RIO",
+              "ticker": "RIO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/rio-tinto.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RIO/",
+              "capitalizacion_mercado": "133,03 B USD"
+            },
+            {
+              "nombre": "SCCO",
+              "ticker": "SCCO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/southern-copper.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SCCO/",
+              "capitalizacion_mercado": "120,55 B USD"
+            },
+            {
+              "nombre": "FCX",
+              "ticker": "FCX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/freeport-mcmoran.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FCX/",
+              "capitalizacion_mercado": "72,72 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Acero",
+          "acciones": [
+            {
+              "nombre": "BHP",
+              "ticker": "BHP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/bhp.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BHP/",
+              "capitalizacion_mercado": "148,81 B USD"
+            },
+            {
+              "nombre": "VALE",
+              "ticker": "VALE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/vale.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-VALE/",
+              "capitalizacion_mercado": "54,56 B USD"
+            },
+            {
+              "nombre": "NUE",
+              "ticker": "NUE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/nucor.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NUE/",
+              "capitalizacion_mercado": "37,59 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Materiales de construcci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "CRH",
+              "ticker": "CRH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/crh.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CRH/",
+              "capitalizacion_mercado": "84,46 B USD"
+            },
+            {
+              "nombre": "VMC",
+              "ticker": "VMC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/vulcan-materials.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-VMC/",
+              "capitalizacion_mercado": "38,57 B USD"
+            },
+            {
+              "nombre": "MLM",
+              "ticker": "MLM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/martin-marietta.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MLM/",
+              "capitalizacion_mercado": "38,14 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Aluminio",
+          "acciones": [
+            {
+              "nombre": "AA",
+              "ticker": "AA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/alcoa.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AA/",
+              "capitalizacion_mercado": "13,91 B USD"
+            },
+            {
+              "nombre": "CENX",
+              "ticker": "CENX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/century-aluminum.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CENX/",
+              "capitalizacion_mercado": "3,47 B USD"
+            },
+            {
+              "nombre": "CSTM",
+              "ticker": "CSTM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/constellium-nv.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CSTM/",
+              "capitalizacion_mercado": "2,61 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Productos forestales",
+          "acciones": [
+            {
+              "nombre": "LPX",
+              "ticker": "LPX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/louisiana-pacific.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LPX/",
+              "capitalizacion_mercado": "5,74 B USD"
+            },
+            {
+              "nombre": "UFPI",
+              "ticker": "UFPI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/universal-forest-products.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-UFPI/",
+              "capitalizacion_mercado": "5,4 B USD"
+            },
+            {
+              "nombre": "WFG",
+              "ticker": "WFG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/west-fraser-timber.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WFG/",
+              "capitalizacion_mercado": "4,7 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios industriales",
+      "industrias": [
+        {
+          "nombre": "Oleoductos y gasoductos",
+          "acciones": [
+            {
+              "nombre": "ENB",
+              "ticker": "ENB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/enbridge.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ENB/",
+              "capitalizacion_mercado": "102,15 B USD"
+            },
+            {
+              "nombre": "WMB",
+              "ticker": "WMB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/williams.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WMB/",
+              "capitalizacion_mercado": "71,95 B USD"
+            },
+            {
+              "nombre": "EPD",
+              "ticker": "EPD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/enterprise-prods-partners.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-EPD/",
+              "capitalizacion_mercado": "69,31 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Ingenier\u00eda y construcci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "PWR",
+              "ticker": "PWR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/quanta-services.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PWR/",
+              "capitalizacion_mercado": "64,57 B USD"
+            },
+            {
+              "nombre": "FER",
+              "ticker": "FER",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ferrovial.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FER/",
+              "capitalizacion_mercado": "46,61 B USD"
+            },
+            {
+              "nombre": "OTIS",
+              "ticker": "OTIS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/otis-worldwide.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-OTIS/",
+              "capitalizacion_mercado": "34 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios medioambientales",
+          "acciones": [
+            {
+              "nombre": "WM",
+              "ticker": "WM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/waste-management.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WM/",
+              "capitalizacion_mercado": "88,49 B USD"
+            },
+            {
+              "nombre": "RSG",
+              "ticker": "RSG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/republic-services.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RSG/",
+              "capitalizacion_mercado": "65,91 B USD"
+            },
+            {
+              "nombre": "WCN",
+              "ticker": "WCN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/waste-connections-ca.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WCN/",
+              "capitalizacion_mercado": "45,32 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Contrato de perforaci\u00f3n",
+          "acciones": [
+            {
+              "nombre": "SLB",
+              "ticker": "SLB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/schlumberger.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SLB/",
+              "capitalizacion_mercado": "57,26 B USD"
+            },
+            {
+              "nombre": "BKR",
+              "ticker": "BKR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/baker-hughes.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-BKR/",
+              "capitalizacion_mercado": "44,96 B USD"
+            },
+            {
+              "nombre": "NE",
+              "ticker": "NE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/noble-plc.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NE/",
+              "capitalizacion_mercado": "4,51 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Equipos y servicios de yacimientos petrol\u00edferos",
+          "acciones": [
+            {
+              "nombre": "HAL",
+              "ticker": "HAL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/halliburton.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HAL/",
+              "capitalizacion_mercado": "23,73 B USD"
+            },
+            {
+              "nombre": "FTI",
+              "ticker": "FTI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/technipfmc.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FTI/",
+              "capitalizacion_mercado": "18,19 B USD"
+            },
+            {
+              "nombre": "WFRD",
+              "ticker": "WFRD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/weatherford.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-WFRD/",
+              "capitalizacion_mercado": "5,77 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Transporte",
+      "industrias": [
+        {
+          "nombre": "Ferrocarriles",
+          "acciones": [
+            {
+              "nombre": "UNP",
+              "ticker": "UNP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/union-pacific.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UNP/",
+              "capitalizacion_mercado": "139,16 B USD"
+            },
+            {
+              "nombre": "NSC",
+              "ticker": "NSC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/norfolk-southern.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NSC/",
+              "capitalizacion_mercado": "71,36 B USD"
+            },
+            {
+              "nombre": "CSX",
+              "ticker": "CSX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/csx.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CSX/",
+              "capitalizacion_mercado": "68,04 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Carga a\u00e9rea y mensajer\u00eda",
+          "acciones": [
+            {
+              "nombre": "DASH",
+              "ticker": "DASH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/doordash.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-DASH/",
+              "capitalizacion_mercado": "101,24 B USD"
+            },
+            {
+              "nombre": "UPS",
+              "ticker": "UPS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/united-parcel.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UPS/",
+              "capitalizacion_mercado": "85,46 B USD"
+            },
+            {
+              "nombre": "FDX",
+              "ticker": "FDX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fedex.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FDX/",
+              "capitalizacion_mercado": "68,84 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Otros medios de transporte",
+          "acciones": [
+            {
+              "nombre": "UBER",
+              "ticker": "UBER",
+              "image_url": "https://s3-symbol-logo.tradingview.com/uber.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UBER/",
+              "capitalizacion_mercado": "168,84 B USD"
+            },
+            {
+              "nombre": "PFGC",
+              "ticker": "PFGC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/performance-food.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PFGC/",
+              "capitalizacion_mercado": "14,45 B USD"
+            },
+            {
+              "nombre": "PAC",
+              "ticker": "PAC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/gpo-aeroportuario-del-pacifico.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PAC/",
+              "capitalizacion_mercado": "13,55 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Aerol\u00edneas",
+          "acciones": [
+            {
+              "nombre": "DAL",
+              "ticker": "DAL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/delta-air-lines.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DAL/",
+              "capitalizacion_mercado": "47,05 B USD"
+            },
+            {
+              "nombre": "UAL",
+              "ticker": "UAL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/united-airlines.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-UAL/",
+              "capitalizacion_mercado": "37,56 B USD"
+            },
+            {
+              "nombre": "RYAAY",
+              "ticker": "RYAAY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ryanair.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-RYAAY/",
+              "capitalizacion_mercado": "36,35 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Transportista",
+          "acciones": [
+            {
+              "nombre": "ODFL",
+              "ticker": "ODFL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/old-dominion.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ODFL/",
+              "capitalizacion_mercado": "33,31 B USD"
+            },
+            {
+              "nombre": "JBHT",
+              "ticker": "JBHT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/j-b-hunt.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-JBHT/",
+              "capitalizacion_mercado": "19 B USD"
+            },
+            {
+              "nombre": "XPO",
+              "ticker": "XPO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/xpo-logistics.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-XPO/",
+              "capitalizacion_mercado": "16,58 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Navegaci\u00f3n mar\u00edtima",
+          "acciones": [
+            {
+              "nombre": "KEX",
+              "ticker": "KEX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/kirby.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-KEX/",
+              "capitalizacion_mercado": "6,04 B USD"
+            },
+            {
+              "nombre": "FRO",
+              "ticker": "FRO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/frontline.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FRO/",
+              "capitalizacion_mercado": "4,86 B USD"
+            },
+            {
+              "nombre": "MATX",
+              "ticker": "MATX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/matson.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MATX/",
+              "capitalizacion_mercado": "3,84 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios comerciales",
+      "industrias": [
+        {
+          "nombre": "Servicios comerciales diversos",
+          "acciones": [
+            {
+              "nombre": "SHOP",
+              "ticker": "SHOP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/shopify.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SHOP/",
+              "capitalizacion_mercado": "220,88 B USD"
+            },
+            {
+              "nombre": "RELX",
+              "ticker": "RELX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/relx.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RELX/",
+              "capitalizacion_mercado": "74,16 B USD"
+            },
+            {
+              "nombre": "PYPL",
+              "ticker": "PYPL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/paypal.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PYPL/",
+              "capitalizacion_mercado": "56,01 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios y publicidad financiera",
+          "acciones": [
+            {
+              "nombre": "SPGI",
+              "ticker": "SPGI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/s-and-p-global.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SPGI/",
+              "capitalizacion_mercado": "157,96 B USD"
+            },
+            {
+              "nombre": "MCO",
+              "ticker": "MCO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/moodys.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MCO/",
+              "capitalizacion_mercado": "90,92 B USD"
+            },
+            {
+              "nombre": "FICO",
+              "ticker": "FICO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fair-isaac.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FICO/",
+              "capitalizacion_mercado": "41,32 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios de publicidad y marketing",
+          "acciones": [
+            {
+              "nombre": "OMC",
+              "ticker": "OMC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/omnicom-group.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-OMC/",
+              "capitalizacion_mercado": "25,18 B USD"
+            },
+            {
+              "nombre": "WPP",
+              "ticker": "WPP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/wpp.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-WPP/",
+              "capitalizacion_mercado": "4,82 B USD"
+            },
+            {
+              "nombre": "DJT",
+              "ticker": "DJT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/digital-world-acquisition-corp.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-DJT/",
+              "capitalizacion_mercado": "3,98 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Impresiones/formularios comerciales",
+          "acciones": [
+            {
+              "nombre": "WMG",
+              "ticker": "WMG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/wmg.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-WMG/",
+              "capitalizacion_mercado": "15,64 B USD"
+            },
+            {
+              "nombre": "BZ",
+              "ticker": "BZ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/kanzhun-limited-american-depository-shares.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-BZ/",
+              "capitalizacion_mercado": "10,85 B USD"
+            },
+            {
+              "nombre": "CMPO",
+              "ticker": "CMPO",
+              "image_url": "https://s3-symbol-logo.tradingview.com/composecure.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CMPO/",
+              "capitalizacion_mercado": "2,43 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios de personal",
+          "acciones": [
+            {
+              "nombre": "KFY",
+              "ticker": "KFY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/korn-ferry.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-KFY/",
+              "capitalizacion_mercado": "3,51 B USD"
+            },
+            {
+              "nombre": "RHI",
+              "ticker": "RHI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/robert-half-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RHI/",
+              "capitalizacion_mercado": "2,82 B USD"
+            },
+            {
+              "nombre": "UPWK",
+              "ticker": "UPWK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/upwork.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-UPWK/",
+              "capitalizacion_mercado": "2,78 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Industrias de proceso",
+      "industrias": [
+        {
+          "nombre": "Qu\u00edmicos: Productos especiales",
+          "acciones": [
+            {
+              "nombre": "LIN",
+              "ticker": "LIN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/linde.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-LIN/",
+              "capitalizacion_mercado": "197,76 B USD"
+            },
+            {
+              "nombre": "ECL",
+              "ticker": "ECL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ecolab.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ECL/",
+              "capitalizacion_mercado": "75,73 B USD"
+            },
+            {
+              "nombre": "APD",
+              "ticker": "APD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/air-products-and-chemicals.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-APD/",
+              "capitalizacion_mercado": "54,49 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Especialidades del sector industrial",
+          "acciones": [
+            {
+              "nombre": "SHW",
+              "ticker": "SHW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sherwin-williams.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SHW/",
+              "capitalizacion_mercado": "80,28 B USD"
+            },
+            {
+              "nombre": "PPG",
+              "ticker": "PPG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ppg-industries.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PPG/",
+              "capitalizacion_mercado": "23,2 B USD"
+            },
+            {
+              "nombre": "RPM",
+              "ticker": "RPM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/rpm-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-RPM/",
+              "capitalizacion_mercado": "13,5 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Contenedores y embalaje",
+          "acciones": [
+            {
+              "nombre": "SW",
+              "ticker": "SW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/smurfit-kappa.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SW/",
+              "capitalizacion_mercado": "19,83 B USD"
+            },
+            {
+              "nombre": "AMCR",
+              "ticker": "AMCR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/amcor.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AMCR/",
+              "capitalizacion_mercado": "19,17 B USD"
+            },
+            {
+              "nombre": "PKG",
+              "ticker": "PKG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/packaging-of-america.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-PKG/",
+              "capitalizacion_mercado": "18,58 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Productos agr\u00edcolas y de molienda",
+          "acciones": [
+            {
+              "nombre": "CTVA",
+              "ticker": "CTVA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/corteva.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CTVA/",
+              "capitalizacion_mercado": "45,33 B USD"
+            },
+            {
+              "nombre": "ADM",
+              "ticker": "ADM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/archer-daniels-midland.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ADM/",
+              "capitalizacion_mercado": "27,8 B USD"
+            },
+            {
+              "nombre": "BG",
+              "ticker": "BG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/bunge.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BG/",
+              "capitalizacion_mercado": "17,36 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Qu\u00edmicos: Agricultura",
+          "acciones": [
+            {
+              "nombre": "NTR",
+              "ticker": "NTR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/nutrien.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-NTR/",
+              "capitalizacion_mercado": "30,29 B USD"
+            },
+            {
+              "nombre": "CF",
+              "ticker": "CF",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cf-industries.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CF/",
+              "capitalizacion_mercado": "12,08 B USD"
+            },
+            {
+              "nombre": "MOS",
+              "ticker": "MOS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mosaic.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MOS/",
+              "capitalizacion_mercado": "7,72 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Pasta y papel",
+          "acciones": [
+            {
+              "nombre": "IP",
+              "ticker": "IP",
+              "image_url": "https://s3-symbol-logo.tradingview.com/international-paper.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-IP/",
+              "capitalizacion_mercado": "20,75 B USD"
+            },
+            {
+              "nombre": "AVY",
+              "ticker": "AVY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/avery-dennison.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AVY/",
+              "capitalizacion_mercado": "13,99 B USD"
+            },
+            {
+              "nombre": "SUZ",
+              "ticker": "SUZ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/suzano.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SUZ/",
+              "capitalizacion_mercado": "11,59 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Qu\u00edmicos: principales diversificados",
+          "acciones": [
+            {
+              "nombre": "DD",
+              "ticker": "DD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/dupont-de-nemours.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DD/",
+              "capitalizacion_mercado": "17,38 B USD"
+            },
+            {
+              "nombre": "SOLS",
+              "ticker": "SOLS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/solstice-advanced-materials.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SOLS/",
+              "capitalizacion_mercado": "7,96 B USD"
+            },
+            {
+              "nombre": "ESI",
+              "ticker": "ESI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/element-solutions.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ESI/",
+              "capitalizacion_mercado": "6,23 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Textiles",
+          "acciones": [
+            {
+              "nombre": "AIN",
+              "ticker": "AIN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/albany-international.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-AIN/",
+              "capitalizacion_mercado": "1,47 B USD"
+            },
+            {
+              "nombre": "MAGN",
+              "ticker": "MAGN",
+              "image_url": "https://s3-symbol-logo.tradingview.com/glatfelter.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MAGN/",
+              "capitalizacion_mercado": "517,98 M USD"
+            },
+            {
+              "nombre": "UFI",
+              "ticker": "UFI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/unifi-new.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UFI/",
+              "capitalizacion_mercado": "59,86 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comunicaciones",
+      "industrias": [
+        {
+          "nombre": "Telecomunicaciones inal\u00e1mbricas",
+          "acciones": [
+            {
+              "nombre": "TMUS",
+              "ticker": "TMUS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/t-mobile.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-TMUS/",
+              "capitalizacion_mercado": "218,96 B USD"
+            },
+            {
+              "nombre": "T",
+              "ticker": "T",
+              "image_url": "https://s3-symbol-logo.tradingview.com/at-and-t.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-T/",
+              "capitalizacion_mercado": "172,27 B USD"
+            },
+            {
+              "nombre": "VZ",
+              "ticker": "VZ",
+              "image_url": "https://s3-symbol-logo.tradingview.com/verizon.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-VZ/",
+              "capitalizacion_mercado": "168,57 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Principales empresas de telecomunicaciones",
+          "acciones": [
+            {
+              "nombre": "CHT",
+              "ticker": "CHT",
+              "image_url": "https://s3-symbol-logo.tradingview.com/chunghwa-telecom.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CHT/",
+              "capitalizacion_mercado": "32,19 B USD"
+            },
+            {
+              "nombre": "BCE",
+              "ticker": "BCE",
+              "image_url": "https://s3-symbol-logo.tradingview.com/bce.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BCE/",
+              "capitalizacion_mercado": "21,2 B USD"
+            },
+            {
+              "nombre": "FYBR",
+              "ticker": "FYBR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/frontier-communications.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FYBR/",
+              "capitalizacion_mercado": "9,55 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Telecomunicaciones especializadas",
+          "acciones": [
+            {
+              "nombre": "ASTS",
+              "ticker": "ASTS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ast-spacemobile.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ASTS/",
+              "capitalizacion_mercado": "31,77 B USD"
+            },
+            {
+              "nombre": "SATS",
+              "ticker": "SATS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/echostar.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-SATS/",
+              "capitalizacion_mercado": "31,34 B USD"
+            },
+            {
+              "nombre": "TEF",
+              "ticker": "TEF",
+              "image_url": "https://s3-symbol-logo.tradingview.com/telefonica.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TEF/",
+              "capitalizacion_mercado": "22,61 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios de salud",
+      "industrias": [
+        {
+          "nombre": "Atenci\u00f3n m\u00e9dica administrada",
+          "acciones": [
+            {
+              "nombre": "UNH",
+              "ticker": "UNH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/unitedhealth.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UNH/",
+              "capitalizacion_mercado": "294,54 B USD"
+            },
+            {
+              "nombre": "ELV",
+              "ticker": "ELV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/anthem.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ELV/",
+              "capitalizacion_mercado": "76,51 B USD"
+            },
+            {
+              "nombre": "CI",
+              "ticker": "CI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cigna.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CI/",
+              "capitalizacion_mercado": "73,62 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios m\u00e9dicos y de enfermer\u00eda",
+          "acciones": [
+            {
+              "nombre": "LH",
+              "ticker": "LH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/laboratory-amer.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-LH/",
+              "capitalizacion_mercado": "21,14 B USD"
+            },
+            {
+              "nombre": "SOLV",
+              "ticker": "SOLV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/solventum.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SOLV/",
+              "capitalizacion_mercado": "14,01 B USD"
+            },
+            {
+              "nombre": "FMS",
+              "ticker": "FMS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fresenius-medical-care.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FMS/",
+              "capitalizacion_mercado": "13,73 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Gesti\u00f3n de hospitales y enfermer\u00eda",
+          "acciones": [
+            {
+              "nombre": "HCA",
+              "ticker": "HCA",
+              "image_url": "https://s3-symbol-logo.tradingview.com/hca-healthcare.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-HCA/",
+              "capitalizacion_mercado": "107,71 B USD"
+            },
+            {
+              "nombre": "THC",
+              "ticker": "THC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/tenet-healthcare.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-THC/",
+              "capitalizacion_mercado": "17,57 B USD"
+            },
+            {
+              "nombre": "UHS",
+              "ticker": "UHS",
+              "image_url": "https://s3-symbol-logo.tradingview.com/universal-health-services.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-UHS/",
+              "capitalizacion_mercado": "14,16 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Servicios en el sector sanitario",
+          "acciones": [
+            {
+              "nombre": "DGX",
+              "ticker": "DGX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/quest-diagnostics.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-DGX/",
+              "capitalizacion_mercado": "19,62 B USD"
+            },
+            {
+              "nombre": "ASTH",
+              "ticker": "ASTH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/apollo-medical.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-ASTH/",
+              "capitalizacion_mercado": "1,2 B USD"
+            },
+            {
+              "nombre": "NRC",
+              "ticker": "NRC",
+              "image_url": "https://s3-symbol-logo.tradingview.com/national-research.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-NRC/",
+              "capitalizacion_mercado": "427,77 M USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios de distribuci\u00f3n",
+      "industrias": [
+        {
+          "nombre": "Distribuidores al por mayor",
+          "acciones": [
+            {
+              "nombre": "GWW",
+              "ticker": "GWW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/grainger.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-GWW/",
+              "capitalizacion_mercado": "49,21 B USD"
+            },
+            {
+              "nombre": "FAST",
+              "ticker": "FAST",
+              "image_url": "https://s3-symbol-logo.tradingview.com/fastenal.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-FAST/",
+              "capitalizacion_mercado": "47,93 B USD"
+            },
+            {
+              "nombre": "FERG",
+              "ticker": "FERG",
+              "image_url": "https://s3-symbol-logo.tradingview.com/ferguson.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-FERG/",
+              "capitalizacion_mercado": "44,92 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Distribuidores m\u00e9dicos",
+          "acciones": [
+            {
+              "nombre": "MCK",
+              "ticker": "MCK",
+              "image_url": "https://s3-symbol-logo.tradingview.com/mckesson.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-MCK/",
+              "capitalizacion_mercado": "101,01 B USD"
+            },
+            {
+              "nombre": "COR",
+              "ticker": "COR",
+              "image_url": "https://s3-symbol-logo.tradingview.com/amerisourcebergen.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-COR/",
+              "capitalizacion_mercado": "65,96 B USD"
+            },
+            {
+              "nombre": "CAH",
+              "ticker": "CAH",
+              "image_url": "https://s3-symbol-logo.tradingview.com/cardinal-health.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-CAH/",
+              "capitalizacion_mercado": "48,75 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Distribuidores de alimentos",
+          "acciones": [
+            {
+              "nombre": "SYY",
+              "ticker": "SYY",
+              "image_url": "https://s3-symbol-logo.tradingview.com/sysco.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SYY/",
+              "capitalizacion_mercado": "35,71 B USD"
+            },
+            {
+              "nombre": "USFD",
+              "ticker": "USFD",
+              "image_url": "https://s3-symbol-logo.tradingview.com/us-foods.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-USFD/",
+              "capitalizacion_mercado": "17,24 B USD"
+            },
+            {
+              "nombre": "CHEF",
+              "ticker": "CHEF",
+              "image_url": "https://s3-symbol-logo.tradingview.com/chefs-warehouse.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-CHEF/",
+              "capitalizacion_mercado": "2,64 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Distribuidores de componentes electr\u00f3nicos",
+          "acciones": [
+            {
+              "nombre": "SNX",
+              "ticker": "SNX",
+              "image_url": "https://s3-symbol-logo.tradingview.com/synnex.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-SNX/",
+              "capitalizacion_mercado": "12,51 B USD"
+            },
+            {
+              "nombre": "ARW",
+              "ticker": "ARW",
+              "image_url": "https://s3-symbol-logo.tradingview.com/arrow-electronics.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-ARW/",
+              "capitalizacion_mercado": "5,84 B USD"
+            },
+            {
+              "nombre": "REZI",
+              "ticker": "REZI",
+              "image_url": "https://s3-symbol-logo.tradingview.com/resideo-technologies.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-REZI/",
+              "capitalizacion_mercado": "5,36 B USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Miscel\u00e1nea",
+      "industrias": [
+        {
+          "nombre": "Fondos de inversi\u00f3n colectiva y sociedades de inversi\u00f3n",
+          "acciones": [
+            {
+              "nombre": "TPL",
+              "ticker": "TPL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/texas-pacific-land-corporation.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-TPL/",
+              "capitalizacion_mercado": "20,87 B USD"
+            },
+            {
+              "nombre": "VNOM",
+              "ticker": "VNOM",
+              "image_url": "https://s3-symbol-logo.tradingview.com/viper-energy.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-VNOM/",
+              "capitalizacion_mercado": "13,83 B USD"
+            },
+            {
+              "nombre": "BXSL",
+              "ticker": "BXSL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/blackstone.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NYSE-BXSL/",
+              "capitalizacion_mercado": "6,27 B USD"
+            }
+          ]
+        },
+        {
+          "nombre": "Miscel\u00e1nea",
+          "acciones": [
+            {
+              "nombre": "LMB",
+              "ticker": "LMB",
+              "image_url": "https://s3-symbol-logo.tradingview.com/limbach.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-LMB/",
+              "capitalizacion_mercado": "938,75 M USD"
+            },
+            {
+              "nombre": "PANL",
+              "ticker": "PANL",
+              "image_url": "https://s3-symbol-logo.tradingview.com/pangaea-logistics-solutions-ltd.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-PANL/",
+              "capitalizacion_mercado": "463,91 M USD"
+            },
+            {
+              "nombre": "INV",
+              "ticker": "INV",
+              "image_url": "https://s3-symbol-logo.tradingview.com/innventure.svg",
+              "url_accion": "https://es.tradingview.com/symbols/NASDAQ-INV/",
+              "capitalizacion_mercado": "271,75 M USD"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+[
+  {
+    "ticker": "AAVE/USD",
+    "name": "AAVE/US Dollar"
+  },
+  {
+    "ticker": "AAVE/USDT",
+    "name": "AAVE/Tether"
+  },
+  {
+    "ticker": "ADA/USD",
+    "name": "Cardano/US Dollar"
+  },
+  {
+    "ticker": "ADA/USDT",
+    "name": "Cardano/Tether"
+  },
+  {
+    "ticker": "APT/USDT",
+    "name": "Aptos/Tether"
+  },
+  {
+    "ticker": "ARB/USDT",
+    "name": "Arbitrum/Tether"
+  },
+  {
+    "ticker": "ATOM/USD",
+    "name": "Cosmos/US Dollar"
+  },
+  {
+    "ticker": "ATOM/USDT",
+    "name": "Cosmos/Tether"
+  },
+  {
+    "ticker": "AVAX/USD",
+    "name": "Avalanche/US Dollar"
+  },
+  {
+    "ticker": "AVAX/USDT",
+    "name": "Avalanche/Tether"
+  },
+  {
+    "ticker": "BCH/USD",
+    "name": "Bitcoin Cash/US Dollar"
+  },
+  {
+    "ticker": "BCH/USDT",
+    "name": "Bitcoin Cash/Tether"
+  },
+  {
+    "ticker": "BTC/BRL",
+    "name": "Bitcoin/Real Brasileiro"
+  },
+  {
+    "ticker": "BTC/USD",
+    "name": "Bitcoin/US Dollar"
+  },
+  {
+    "ticker": "BTC/USDT",
+    "name": "Bitcoin/Tether"
+  },
+  {
+    "ticker": "DOGE/USD",
+    "name": "Dogecoin/US Dollar"
+  },
+  {
+    "ticker": "DOGE/USDT",
+    "name": "Dogecoin/Tether"
+  },
+  {
+    "ticker": "DOT/USD",
+    "name": "Polkadot/US Dollar"
+  },
+  {
+    "ticker": "DOT/USDT",
+    "name": "Polkadot/Tether"
+  },
+  {
+    "ticker": "ETC/USD",
+    "name": "Ethereum Classic/US Dollar"
+  },
+  {
+    "ticker": "ETC/USDT",
+    "name": "Ethereum Classic/Tether"
+  },
+  {
+    "ticker": "ETH/USD",
+    "name": "Ethereum/US Dollar"
+  },
+  {
+    "ticker": "ETH/USDT",
+    "name": "Ethereum/Tether"
+  },
+  {
+    "ticker": "FIL/USD",
+    "name": "Filecoin/US Dollar"
+  },
+  {
+    "ticker": "FIL/USDT",
+    "name": "Filecoin/Tether"
+  },
+  {
+    "ticker": "HBAR/USD",
+    "name": "Hedera/US Dollar"
+  },
+  {
+    "ticker": "HBAR/USDT",
+    "name": "Hedera/Tether"
+  },
+  {
+    "ticker": "INJ/USDT",
+    "name": "Injective/Tether"
+  },
+  {
+    "ticker": "LINK/USD",
+    "name": "ChainLink/US Dollar"
+  },
+  {
+    "ticker": "LINK/USDT",
+    "name": "ChainLink/Tether"
+  },
+  {
+    "ticker": "LTC/USD",
+    "name": "Litecoin/US Dollar"
+  },
+  {
+    "ticker": "LTC/USDT",
+    "name": "Litecoin/Tether"
+  },
+  {
+    "ticker": "MANA/USDT",
+    "name": "Decentraland/Tether"
+  },
+  {
+    "ticker": "NEAR/USDT",
+    "name": "NEAR Protocol/Tether"
+  },
+  {
+    "ticker": "NEO/USDT",
+    "name": "NEO/Tether"
+  },
+  {
+    "ticker": "OP/USDT",
+    "name": "Optimism/Tether"
+  },
+  {
+    "ticker": "POL/USDT",
+    "name": "Polygon/Tether"
+  },
+  {
+    "ticker": "RENDER/USDT",
+    "name": "Render/Tether"
+  },
+  {
+    "ticker": "RUNE/USDT",
+    "name": "THORChain/Tether"
+  },
+  {
+    "ticker": "S/USDT",
+    "name": "Sonic/Tether"
+  },
+  {
+    "ticker": "SAND/USDT",
+    "name": "The Sandbox/Tether"
+  },
+  {
+    "ticker": "SOL/USD",
+    "name": "Solana/US Dollar"
+  },
+  {
+    "ticker": "SOL/USDT",
+    "name": "Solana/Tether"
+  },
+  {
+    "ticker": "SUI/USDT",
+    "name": "Sui/Tether"
+  },
+  {
+    "ticker": "TAO/USDT",
+    "name": "Bittensor/Tether"
+  },
+  {
+    "ticker": "THETA/USDT",
+    "name": "Theta/Tether"
+  },
+  {
+    "ticker": "TON/USDT",
+    "name": "Toncoin/Tether"
+  },
+  {
+    "ticker": "UNI/USD",
+    "name": "Uniswap/US Dollar"
+  },
+  {
+    "ticker": "UNI/USDT",
+    "name": "Uniswap/Tether"
+  },
+  {
+    "ticker": "XRP/USD",
+    "name": "Ripple/US Dollar"
+  },
+  {
+    "ticker": "XRP/USDT",
+    "name": "Ripple/Tether"
+  }
+]

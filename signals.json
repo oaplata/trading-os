@@ -1,0 +1,745 @@
+{
+  "fecha_analisis": "2025-12-26T15:43:16.570428",
+  "parametros": {
+    "timeframe": "1d",
+    "ma_length": 21,
+    "consecutive_periods": 3,
+    "delay_seconds": 1.0,
+    "max_errors": 10
+  },
+  "estadisticas": {
+    "total_analizados": 400,
+    "con_senal_alcista": 4,
+    "sin_senal": 396
+  },
+  "resultados": [
+    {
+      "ticker": "NVDA",
+      "timestamp": "2025-12-26T15:25:39.735138",
+      "ath": {
+        "ticker": "NVDA",
+        "nombre": "NVIDIA Corporation",
+        "precio_actual": 188.61000061035156,
+        "ath_precio": 212.1781954922272,
+        "fecha_ath": "2025-10-29 00:00:00-04:00",
+        "fecha_actual": "2025-12-24 00:00:00-05:00",
+        "tiempo_transcurrido_dias": 56,
+        "drawdown_ath": 11.10773650760877,
+        "periodo_analizado_inicio": "1999-01-22 00:00:00-05:00",
+        "periodo_analizado_fin": "2025-12-24 00:00:00-05:00",
+        "total_registros": 6774
+      },
+      "media_movil": {
+        "ma_length": 21,
+        "consecutive_periods": 3,
+        "media_movil_actual": 180.64857700892858,
+        "precio_actual": 188.61000061035156,
+        "fecha_ultima_vela": "2025-12-24 00:00:00-05:00",
+        "senal_ultima_vela": 1,
+        "tipo_senal": "alcista",
+        "hay_senal": true
+      },
+      "signal": {
+        "type": "alcista",
+        "ma_length": 21,
+        "consecutive_periods": 3
+      },
+      "technical_score": {
+        "gates": {
+          "pass": true,
+          "details": [
+            {
+              "id": "G1",
+              "pass": true,
+              "value": 188.61000061035156,
+              "threshold": 158.7106150817871,
+              "reason": "Close (188.61)  >  MA200 (158.71)"
+            },
+            {
+              "id": "G2",
+              "pass": true,
+              "value": 0.27640914344787576,
+              "threshold": 0.0,
+              "reason": "Slope MA200 (0.2764)  >  0"
+            },
+            {
+              "id": "G3",
+              "pass": true,
+              "value": 31184361789.360504,
+              "threshold": 1000000,
+              "reason": "Dollar volume avg20 ($31,184,361,789)  >=  $1,000,000"
+            },
+            {
+              "id": "G4",
+              "pass": true,
+              "value": 2.639234123833151,
+              "threshold": 5.0,
+              "reason": "ATR% (2.64%)  <=  5.0%"
+            }
+          ]
+        },
+        "score": {
+          "final": 71.06439756849073,
+          "modules": {
+            "A_trend": {
+              "score": 20.0,
+              "max": 25,
+              "details": [
+                {
+                  "metric_name": "price_above_ma_long_strength",
+                  "raw_value": 6.006474378427426,
+                  "normalized_value": 1.0,
+                  "points_contribution": 10.0,
+                  "rule_text": "Distancia (Close-MA200)/ATR = 6.01"
+                },
+                {
+                  "metric_name": "ma_long_slope_norm",
+                  "raw_value": 0.055527710979097464,
+                  "normalized_value": 1.0,
+                  "points_contribution": 10.0,
+                  "rule_text": "Slope MA200/ATR = 0.0555"
+                },
+                {
+                  "metric_name": "structure_proxy",
+                  "raw_value": 0,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Breakout 55: Close (188.61)  <=  max(High,55) (212.18)"
+                }
+              ]
+            },
+            "B_turn_quality": {
+              "score": 12.929090856276996,
+              "max": 20,
+              "details": [
+                {
+                  "metric_name": "turn_magnitude",
+                  "raw_value": 0.05806817851731223,
+                  "normalized_value": 0.11613635703462447,
+                  "points_contribution": 0.9290908562769957,
+                  "rule_text": "Magnitud giro: abs(MA_change)/ATR = 0.058"
+                },
+                {
+                  "metric_name": "turn_persistence",
+                  "raw_value": 3.0,
+                  "normalized_value": 1.0,
+                  "points_contribution": 8.0,
+                  "rule_text": "Persistencia: 3.0/3 períodos consecutivos"
+                },
+                {
+                  "metric_name": "extension_penalty",
+                  "raw_value": 1.5993668776928365,
+                  "normalized_value": 1.0,
+                  "points_contribution": 4.0,
+                  "rule_text": "Extensión: (Close-MA21)/ATR = 1.60"
+                }
+              ]
+            },
+            "C_location": {
+              "score": 20.0,
+              "max": 20,
+              "details": [
+                {
+                  "metric_name": "retracement",
+                  "raw_value": 0.4380221364638536,
+                  "normalized_value": 1.0,
+                  "points_contribution": 20.0,
+                  "rule_text": "Retroceso: 43.8% (swing_high=212.18, swing_low=158.37)"
+                }
+              ]
+            },
+            "D_risk": {
+              "score": 10.721531752333698,
+              "max": 15,
+              "details": [
+                {
+                  "metric_name": "atr_percent",
+                  "raw_value": 2.639234123833151,
+                  "normalized_value": 0.786921958722283,
+                  "points_contribution": 4.721531752333698,
+                  "rule_text": "ATR% = 2.64%"
+                },
+                {
+                  "metric_name": "liquidity",
+                  "raw_value": 31184361789.360504,
+                  "normalized_value": 1.0,
+                  "points_contribution": 6.0,
+                  "rule_text": "Dollar volume avg20 = $31,184,361,789"
+                },
+                {
+                  "metric_name": "stop_cost",
+                  "raw_value": 10.556936495332604,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Stop cost (4*ATR) = 10.56%"
+                }
+              ]
+            },
+            "E_demand": {
+              "score": 7.413774959880035,
+              "max": 20,
+              "details": [
+                {
+                  "metric_name": "close_strength",
+                  "raw_value": 0.8706887479940018,
+                  "normalized_value": 0.9267218699850044,
+                  "points_contribution": 7.413774959880035,
+                  "rule_text": "Close position = 0.87 (0=Low, 1=High)"
+                },
+                {
+                  "metric_name": "breakout_score",
+                  "raw_value": 0,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Breakout 20: Close (188.61)  <=  max(High,20) (189.33)"
+                },
+                {
+                  "metric_name": "volume_relative",
+                  "raw_value": 0.379068408084205,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Volume relativo = 0.38x promedio 20"
+                }
+              ]
+            },
+            "F_timefit": {
+              "score": 0.0,
+              "max": 15,
+              "details": [
+                {
+                  "metric_name": "timefit",
+                  "raw_value": 40.0,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Expected bars to TP: 40.0 (8.0 semanas)"
+                }
+              ],
+              "forecast_data": {
+                "entry": 188.61000061035156,
+                "atr14": 4.9778594970703125,
+                "k_target": 8.0,
+                "stop_atr_mult": 4.0,
+                "tp": 228.43287658691406,
+                "sl": 168.6985626220703,
+                "er_lookback": 20,
+                "er": 0.2,
+                "expected_bars_to_tp": 40.0,
+                "expected_weeks_to_tp": 8.0
+              }
+            }
+          }
+        },
+        "raw_metrics": {
+          "A_trend_price_above_ma_long_strength": 6.006474378427426,
+          "A_trend_ma_long_slope_norm": 0.055527710979097464,
+          "A_trend_structure_proxy": 0,
+          "B_turn_quality_turn_magnitude": 0.05806817851731223,
+          "B_turn_quality_turn_persistence": 3.0,
+          "B_turn_quality_extension_penalty": 1.5993668776928365,
+          "C_location_retracement": 0.4380221364638536,
+          "D_risk_atr_percent": 2.639234123833151,
+          "D_risk_liquidity": 31184361789.360504,
+          "D_risk_stop_cost": 10.556936495332604,
+          "E_demand_close_strength": 0.8706887479940018,
+          "E_demand_breakout_score": 0,
+          "E_demand_volume_relative": 0.379068408084205,
+          "F_timefit_timefit": 40.0
+        },
+        "normalized_metrics": {
+          "A_trend_price_above_ma_long_strength": 1.0,
+          "A_trend_ma_long_slope_norm": 1.0,
+          "A_trend_structure_proxy": 0.0,
+          "B_turn_quality_turn_magnitude": 0.11613635703462447,
+          "B_turn_quality_turn_persistence": 1.0,
+          "B_turn_quality_extension_penalty": 1.0,
+          "C_location_retracement": 1.0,
+          "D_risk_atr_percent": 0.786921958722283,
+          "D_risk_liquidity": 1.0,
+          "D_risk_stop_cost": 0.0,
+          "E_demand_close_strength": 0.9267218699850044,
+          "E_demand_breakout_score": 0.0,
+          "E_demand_volume_relative": 0.0,
+          "F_timefit_timefit": 0.0
+        },
+        "forecast": {
+          "entry": 188.61000061035156,
+          "atr14": 4.9778594970703125,
+          "k_target": 8.0,
+          "stop_atr_mult": 4.0,
+          "tp": 228.43287658691406,
+          "sl": 168.6985626220703,
+          "er_lookback": 20,
+          "er": 0.2,
+          "expected_bars_to_tp": 40.0,
+          "expected_weeks_to_tp": 8.0
+        },
+        "explain": {
+          "summary": [
+            "Score técnico final: 71.1/100",
+            "Módulo A (Tendencia): 20.0/25",
+            "Módulo B (Giro MA): 12.9/20",
+            "Módulo C (Ubicación): 20.0/20",
+            "Módulo D (Riesgo): 10.7/15",
+            "Módulo E (Demanda): 7.4/20",
+            "Módulo F (Time-Fit): 0.0/15"
+          ],
+          "module_explanations": {
+            "F_timefit": {
+              "why": "TP a 8.0 ATR; SL a 4.0 ATR. ER(20)=0.200. Expected bars to TP=40.0 => 8.0 semanas. Encaje 4-6 semanas: medio",
+              "calc": {
+                "tp_minus_entry": "228.43 - 188.61 = 39.82",
+                "dist_in_atr": 8.0,
+                "er": 0.2,
+                "expected_bars": 40.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "ticker": "SNDK",
+      "timestamp": "2025-12-26T15:26:24.322102",
+      "ath": {
+        "ticker": "SNDK",
+        "nombre": "Sandisk Corporation",
+        "precio_actual": 250.0800018310547,
+        "ath_precio": 284.760009765625,
+        "fecha_ath": "2025-11-12 00:00:00-05:00",
+        "fecha_actual": "2025-12-24 00:00:00-05:00",
+        "tiempo_transcurrido_dias": 42,
+        "drawdown_ath": 12.17867914919447,
+        "periodo_analizado_inicio": "2025-02-13 00:00:00-05:00",
+        "periodo_analizado_fin": "2025-12-24 00:00:00-05:00",
+        "total_registros": 218
+      },
+      "media_movil": {
+        "ma_length": 21,
+        "consecutive_periods": 3,
+        "media_movil_actual": 221.29476202101935,
+        "precio_actual": 250.0800018310547,
+        "fecha_ultima_vela": "2025-12-24 00:00:00-05:00",
+        "senal_ultima_vela": 1,
+        "tipo_senal": "alcista",
+        "hay_senal": true
+      },
+      "signal": {
+        "type": "alcista",
+        "ma_length": 21,
+        "consecutive_periods": 3
+      },
+      "technical_score": {
+        "gates": {
+          "pass": false,
+          "details": [
+            {
+              "id": "G1",
+              "pass": true,
+              "value": 250.0800018310547,
+              "threshold": 93.47260031700134,
+              "reason": "Close (250.08)  >  MA200 (93.47)"
+            },
+            {
+              "id": "G2",
+              "pass": false,
+              "value": NaN,
+              "threshold": 0.0,
+              "reason": "Slope MA200 (nan)  <=  0"
+            },
+            {
+              "id": "G3",
+              "pass": true,
+              "value": 2307103517.221451,
+              "threshold": 1000000,
+              "reason": "Dollar volume avg20 ($2,307,103,517)  >=  $1,000,000"
+            },
+            {
+              "id": "G4",
+              "pass": false,
+              "value": 8.055936009804899,
+              "threshold": 5.0,
+              "reason": "ATR% (8.06%)  >  5.0%"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.0,
+          "modules": {}
+        },
+        "raw_metrics": {},
+        "normalized_metrics": {},
+        "forecast": {},
+        "explain": {
+          "summary": [
+            "Gates fallidos: G2, G4"
+          ],
+          "module_explanations": {}
+        }
+      }
+    },
+    {
+      "ticker": "XOM",
+      "timestamp": "2025-12-26T15:36:19.940688",
+      "ath": {
+        "ticker": "XOM",
+        "nombre": "Exxon Mobil Corporation",
+        "precio_actual": 119.22000122070312,
+        "ath_precio": 120.87407309710134,
+        "fecha_ath": "2024-10-07 00:00:00-04:00",
+        "fecha_actual": "2025-12-24 00:00:00-05:00",
+        "tiempo_transcurrido_dias": 443,
+        "drawdown_ath": 1.3684256962776955,
+        "periodo_analizado_inicio": "1962-01-02 00:00:00-05:00",
+        "periodo_analizado_fin": "2025-12-24 00:00:00-05:00",
+        "total_registros": 16104
+      },
+      "media_movil": {
+        "ma_length": 21,
+        "consecutive_periods": 3,
+        "media_movil_actual": 117.17571476527623,
+        "precio_actual": 119.22000122070312,
+        "fecha_ultima_vela": "2025-12-24 00:00:00-05:00",
+        "senal_ultima_vela": 1,
+        "tipo_senal": "alcista",
+        "hay_senal": true
+      },
+      "signal": {
+        "type": "alcista",
+        "ma_length": 21,
+        "consecutive_periods": 3
+      },
+      "technical_score": {
+        "gates": {
+          "pass": true,
+          "details": [
+            {
+              "id": "G1",
+              "pass": true,
+              "value": 119.22000122070312,
+              "threshold": 109.88463092803956,
+              "reason": "Close (119.22)  >  MA200 (109.88)"
+            },
+            {
+              "id": "G2",
+              "pass": true,
+              "value": 0.05423659515380876,
+              "threshold": 0.0,
+              "reason": "Slope MA200 (0.0542)  >  0"
+            },
+            {
+              "id": "G3",
+              "pass": true,
+              "value": 1871089060.9720612,
+              "threshold": 1000000,
+              "reason": "Dollar volume avg20 ($1,871,089,061)  >=  $1,000,000"
+            },
+            {
+              "id": "G4",
+              "pass": true,
+              "value": 1.7722338970080933,
+              "threshold": 5.0,
+              "reason": "ATR% (1.77%)  <=  5.0%"
+            }
+          ]
+        },
+        "score": {
+          "final": 45.42569873866243,
+          "modules": {
+            "A_trend": {
+              "score": 17.56697865162454,
+              "max": 25,
+              "details": [
+                {
+                  "metric_name": "price_above_ma_long_strength",
+                  "raw_value": 4.4183629481753135,
+                  "normalized_value": 1.0,
+                  "points_contribution": 10.0,
+                  "rule_text": "Distancia (Close-MA200)/ATR = 4.42"
+                },
+                {
+                  "metric_name": "ma_long_slope_norm",
+                  "raw_value": 0.02566978651624543,
+                  "normalized_value": 0.7566978651624542,
+                  "points_contribution": 7.5669786516245425,
+                  "rule_text": "Slope MA200/ATR = 0.0257"
+                },
+                {
+                  "metric_name": "structure_proxy",
+                  "raw_value": 0,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Breakout 55: Close (119.22)  <=  max(High,55) (120.47)"
+                }
+              ]
+            },
+            "B_turn_quality": {
+              "score": 13.171962965542152,
+              "max": 20,
+              "details": [
+                {
+                  "metric_name": "turn_magnitude",
+                  "raw_value": 0.07324768534638453,
+                  "normalized_value": 0.14649537069276905,
+                  "points_contribution": 1.1719629655421524,
+                  "rule_text": "Magnitud giro: abs(MA_change)/ATR = 0.073"
+                },
+                {
+                  "metric_name": "turn_persistence",
+                  "raw_value": 3.0,
+                  "normalized_value": 1.0,
+                  "points_contribution": 8.0,
+                  "rule_text": "Persistencia: 3.0/3 períodos consecutivos"
+                },
+                {
+                  "metric_name": "extension_penalty",
+                  "raw_value": 0.9675459298291779,
+                  "normalized_value": 1.0,
+                  "points_contribution": 4.0,
+                  "rule_text": "Extensión: (Close-MA21)/ATR = 0.97"
+                }
+              ]
+            },
+            "C_location": {
+              "score": 0.0,
+              "max": 20,
+              "details": [
+                {
+                  "metric_name": "retracement",
+                  "raw_value": 0.0743183592480631,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Retroceso: 7.4% (swing_high=120.47, swing_low=103.65)"
+                }
+              ]
+            },
+            "D_risk": {
+              "score": 12.546638647180577,
+              "max": 15,
+              "details": [
+                {
+                  "metric_name": "atr_percent",
+                  "raw_value": 1.7722338970080933,
+                  "normalized_value": 1.0,
+                  "points_contribution": 6.0,
+                  "rule_text": "ATR% = 1.77%"
+                },
+                {
+                  "metric_name": "liquidity",
+                  "raw_value": 1871089060.9720612,
+                  "normalized_value": 1.0,
+                  "points_contribution": 6.0,
+                  "rule_text": "Dollar volume avg20 = $1,871,089,061"
+                },
+                {
+                  "metric_name": "stop_cost",
+                  "raw_value": 7.088935588032373,
+                  "normalized_value": 0.1822128823935254,
+                  "points_contribution": 0.5466386471805762,
+                  "rule_text": "Stop cost (4*ATR) = 7.09%"
+                }
+              ]
+            },
+            "E_demand": {
+              "score": 0.0,
+              "max": 20,
+              "details": [
+                {
+                  "metric_name": "close_strength",
+                  "raw_value": 0.10752520570645709,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Close position = 0.11 (0=Low, 1=High)"
+                },
+                {
+                  "metric_name": "breakout_score",
+                  "raw_value": 0,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Breakout 20: Close (119.22)  <=  max(High,20) (120.47)"
+                },
+                {
+                  "metric_name": "volume_relative",
+                  "raw_value": 0.38472580748289,
+                  "normalized_value": 0.0,
+                  "points_contribution": 0.0,
+                  "rule_text": "Volume relativo = 0.38x promedio 20"
+                }
+              ]
+            },
+            "F_timefit": {
+              "score": 2.1401184743151624,
+              "max": 15,
+              "details": [
+                {
+                  "metric_name": "timefit",
+                  "raw_value": 38.57325435045656,
+                  "normalized_value": 0.14267456495434416,
+                  "points_contribution": 2.1401184743151624,
+                  "rule_text": "Expected bars to TP: 38.6 (7.7 semanas)"
+                }
+              ],
+              "forecast_data": {
+                "entry": 119.22000122070312,
+                "atr14": 2.1128572736467635,
+                "k_target": 8.0,
+                "stop_atr_mult": 4.0,
+                "tp": 136.12285940987724,
+                "sl": 110.76857212611607,
+                "er_lookback": 20,
+                "er": 0.20739759024001855,
+                "expected_bars_to_tp": 38.57325435045656,
+                "expected_weeks_to_tp": 7.714650870091312
+              }
+            }
+          }
+        },
+        "raw_metrics": {
+          "A_trend_price_above_ma_long_strength": 4.4183629481753135,
+          "A_trend_ma_long_slope_norm": 0.02566978651624543,
+          "A_trend_structure_proxy": 0,
+          "B_turn_quality_turn_magnitude": 0.07324768534638453,
+          "B_turn_quality_turn_persistence": 3.0,
+          "B_turn_quality_extension_penalty": 0.9675459298291779,
+          "C_location_retracement": 0.0743183592480631,
+          "D_risk_atr_percent": 1.7722338970080933,
+          "D_risk_liquidity": 1871089060.9720612,
+          "D_risk_stop_cost": 7.088935588032373,
+          "E_demand_close_strength": 0.10752520570645709,
+          "E_demand_breakout_score": 0,
+          "E_demand_volume_relative": 0.38472580748289,
+          "F_timefit_timefit": 38.57325435045656
+        },
+        "normalized_metrics": {
+          "A_trend_price_above_ma_long_strength": 1.0,
+          "A_trend_ma_long_slope_norm": 0.7566978651624542,
+          "A_trend_structure_proxy": 0.0,
+          "B_turn_quality_turn_magnitude": 0.14649537069276905,
+          "B_turn_quality_turn_persistence": 1.0,
+          "B_turn_quality_extension_penalty": 1.0,
+          "C_location_retracement": 0.0,
+          "D_risk_atr_percent": 1.0,
+          "D_risk_liquidity": 1.0,
+          "D_risk_stop_cost": 0.1822128823935254,
+          "E_demand_close_strength": 0.0,
+          "E_demand_breakout_score": 0.0,
+          "E_demand_volume_relative": 0.0,
+          "F_timefit_timefit": 0.14267456495434416
+        },
+        "forecast": {
+          "entry": 119.22000122070312,
+          "atr14": 2.1128572736467635,
+          "k_target": 8.0,
+          "stop_atr_mult": 4.0,
+          "tp": 136.12285940987724,
+          "sl": 110.76857212611607,
+          "er_lookback": 20,
+          "er": 0.20739759024001855,
+          "expected_bars_to_tp": 38.57325435045656,
+          "expected_weeks_to_tp": 7.714650870091312
+        },
+        "explain": {
+          "summary": [
+            "Score técnico final: 45.4/100",
+            "Módulo A (Tendencia): 17.6/25",
+            "Módulo B (Giro MA): 13.2/20",
+            "Módulo C (Ubicación): 0.0/20",
+            "Módulo D (Riesgo): 12.5/15",
+            "Módulo E (Demanda): 0.0/20",
+            "Módulo F (Time-Fit): 2.1/15"
+          ],
+          "module_explanations": {
+            "F_timefit": {
+              "why": "TP a 8.0 ATR; SL a 4.0 ATR. ER(20)=0.207. Expected bars to TP=38.6 => 7.7 semanas. Encaje 4-6 semanas: medio",
+              "calc": {
+                "tp_minus_entry": "136.12 - 119.22 = 16.90",
+                "dist_in_atr": 8.0,
+                "er": 0.20739759024001855,
+                "expected_bars": 38.57325435045656
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "ticker": "CVX",
+      "timestamp": "2025-12-26T15:36:23.147266",
+      "ath": {
+        "ticker": "CVX",
+        "nombre": "Chevron Corporation",
+        "precio_actual": 149.74000549316406,
+        "ath_precio": 165.93574659770445,
+        "fecha_ath": "2022-11-14 00:00:00-05:00",
+        "fecha_actual": "2025-12-26 00:00:00-05:00",
+        "tiempo_transcurrido_dias": 1138,
+        "drawdown_ath": 9.760248431463916,
+        "periodo_analizado_inicio": "1962-01-02 00:00:00-05:00",
+        "periodo_analizado_fin": "2025-12-26 00:00:00-05:00",
+        "total_registros": 16105
+      },
+      "media_movil": {
+        "ma_length": 21,
+        "consecutive_periods": 3,
+        "media_movil_actual": 149.93619137718565,
+        "precio_actual": 149.74000549316406,
+        "fecha_ultima_vela": "2025-12-26 00:00:00-05:00",
+        "senal_ultima_vela": 1,
+        "tipo_senal": "alcista",
+        "hay_senal": true
+      },
+      "signal": {
+        "type": "alcista",
+        "ma_length": 21,
+        "consecutive_periods": 3
+      },
+      "technical_score": {
+        "gates": {
+          "pass": false,
+          "details": [
+            {
+              "id": "G1",
+              "pass": true,
+              "value": 149.74000549316406,
+              "threshold": 147.6228357696533,
+              "reason": "Close (149.74)  >  MA200 (147.62)"
+            },
+            {
+              "id": "G2",
+              "pass": false,
+              "value": -0.0005569076538094464,
+              "threshold": 0.0,
+              "reason": "Slope MA200 (-0.0006)  <=  0"
+            },
+            {
+              "id": "G3",
+              "pass": true,
+              "value": 1255173688.6294487,
+              "threshold": 1000000,
+              "reason": "Dollar volume avg20 ($1,255,173,689)  >=  $1,000,000"
+            },
+            {
+              "id": "G4",
+              "pass": true,
+              "value": 1.4364330135501704,
+              "threshold": 5.0,
+              "reason": "ATR% (1.44%)  <=  5.0%"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.0,
+          "modules": {}
+        },
+        "raw_metrics": {},
+        "normalized_metrics": {},
+        "forecast": {},
+        "explain": {
+          "summary": [
+            "Gates fallidos: G2"
+          ],
+          "module_explanations": {}
+        }
+      }
+    }
+  ]
+}

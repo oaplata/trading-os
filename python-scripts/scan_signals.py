@@ -2,63 +2,64 @@
 """
 Script para escanear múltiples activos y filtrar aquellos con señal alcista.
 
-Lee los archivos CSV de ETFs y stocks, ejecuta el análisis para cada activo
+Lee el archivo JSON con datos completos de acciones, ejecuta el análisis para cada activo
 y filtra los resultados que tienen señal alcista en la media móvil.
+Guarda los resultados en un archivo JSON.
 """
 
 import argparse
-import csv
 import json
-import os
 import subprocess
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
 
 # Obtener la ruta del directorio donde está este script
 SCRIPT_DIR = Path(__file__).parent.absolute()
-DATA_DIR = SCRIPT_DIR.parent / 'data'
+HTML_DIR = SCRIPT_DIR.parent / 'html'
 ANALYSIS_SCRIPT = SCRIPT_DIR / 'analysis.py'
 
 
-def cargar_tickers_desde_csv(archivo_csv: Path) -> List[str]:
+def cargar_tickers_desde_json(archivo_json: Path) -> List[str]:
     """
-    Carga los tickers desde un archivo CSV.
+    Carga los tickers desde un archivo JSON con estructura de sectores/industrias/acciones.
     
     Args:
-        archivo_csv: Ruta al archivo CSV
+        archivo_json: Ruta al archivo JSON
     
     Returns:
         Lista de tickers únicos
     """
     tickers = []
     
-    if not archivo_csv.exists():
-        print(f"Advertencia: El archivo {archivo_csv} no existe", file=sys.stderr)
+    if not archivo_json.exists():
+        print(f"Advertencia: El archivo {archivo_json} no existe", file=sys.stderr)
         return tickers
     
     try:
-        with open(archivo_csv, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            fieldnames = reader.fieldnames or []
+        with open(archivo_json, 'r', encoding='utf-8') as f:
+            data = json.load(f)
             
-            # Determinar la columna de ticker según el tipo de archivo
-            if 'etf_ticker' in fieldnames:
-                ticker_col = 'etf_ticker'
-            elif 'stock_ticker' in fieldnames:
-                ticker_col = 'stock_ticker'
-            else:
-                print(f"Error: No se encontró columna de ticker en {archivo_csv}", file=sys.stderr)
-                return tickers
+            # Recorrer la estructura: sectores -> industrias -> acciones
+            sectores = data.get('sectores', [])
             
-            for row in reader:
-                ticker = row.get(ticker_col, '').strip()
-                if ticker:
-                    tickers.append(ticker)
+            for sector in sectores:
+                industrias = sector.get('industrias', [])
+                
+                for industria in industrias:
+                    acciones = industria.get('acciones', [])
+                    
+                    for accion in acciones:
+                        ticker = accion.get('ticker', '').strip()
+                        if ticker:
+                            tickers.append(ticker)
     
+    except json.JSONDecodeError as e:
+        print(f"Error al parsear JSON {archivo_json}: {e}", file=sys.stderr)
     except Exception as e:
-        print(f"Error al leer {archivo_csv}: {e}", file=sys.stderr)
+        print(f"Error al leer {archivo_json}: {e}", file=sys.stderr)
     
     return tickers
 
@@ -223,8 +224,8 @@ Ejemplos de uso:
   python scan_signals.py
   python scan_signals.py --timeframe 1wk --ma_length 50
   python scan_signals.py --delay 2.0 --max_errors 5
-  python scan_signals.py --only-etfs
-  python scan_signals.py --only-stocks
+  python scan_signals.py --json-file datos_completos_20251222_201817.json
+  python scan_signals.py --output mis_resultados.json
         """
     )
     
@@ -265,48 +266,36 @@ Ejemplos de uso:
         help='Número máximo de errores consecutivos antes de detenerse (default: 10)'
     )
     
-    # Opciones de filtrado de activos
+    # Opción para especificar el archivo JSON
     parser.add_argument(
-        '--only-etfs',
-        action='store_true',
-        help='Solo analizar ETFs'
+        '--json-file', '-j',
+        type=str,
+        default='datos_completos_20251222_201817.json',
+        help='Nombre del archivo JSON en el directorio html/ (default: datos_completos_20251222_201817.json)'
     )
     
+    # Opción para especificar el archivo de salida
     parser.add_argument(
-        '--only-stocks',
-        action='store_true',
-        help='Solo analizar stocks'
+        '--output', '-o',
+        type=str,
+        default=None,
+        help='Nombre del archivo JSON de salida (default: resultados_YYYYMMDD_HHMMSS.json)'
     )
     
     args = parser.parse_args()
     
-    # Validar argumentos incompatibles
-    if args.only_etfs and args.only_stocks:
-        print("Error: No se pueden usar --only-etfs y --only-stocks al mismo tiempo", file=sys.stderr)
-        sys.exit(1)
-    
-    # Cargar tickers
-    tickers = []
-    
-    if not args.only_stocks:
-        etfs_csv = DATA_DIR / 'etfs.csv'
-        tickers_etfs = cargar_tickers_desde_csv(etfs_csv)
-        tickers.extend(tickers_etfs)
-        print(f"Cargados {len(tickers_etfs)} ETFs", file=sys.stderr)
-    
-    if not args.only_etfs:
-        stocks_csv = DATA_DIR / 'stocks.csv'
-        tickers_stocks = cargar_tickers_desde_csv(stocks_csv)
-        tickers.extend(tickers_stocks)
-        print(f"Cargados {len(tickers_stocks)} stocks", file=sys.stderr)
+    # Cargar tickers desde JSON
+    json_file = HTML_DIR / args.json_file
+    tickers = cargar_tickers_desde_json(json_file)
     
     if not tickers:
-        error_json = json.dumps({'error': 'No se encontraron tickers para analizar'})
-        print(error_json)
+        error_json = json.dumps({'error': 'No se encontraron tickers para analizar'}, indent=2, ensure_ascii=False)
+        print(error_json, file=sys.stderr)
         sys.exit(1)
     
     # Eliminar duplicados manteniendo el orden
     tickers = list(dict.fromkeys(tickers))
+    print(f"Cargados {len(tickers)} tickers desde {args.json_file}", file=sys.stderr)
     
     # Ejecutar escaneo
     resultados = escanear_activos(
@@ -320,13 +309,39 @@ Ejemplos de uso:
     
     # Preparar resultado final
     resultado_final = {
-        'total_analizados': len(tickers),
-        'con_senal_alcista': len(resultados),
+        'fecha_analisis': datetime.now().isoformat(),
+        'parametros': {
+            'timeframe': args.timeframe,
+            'ma_length': args.ma_length,
+            'consecutive_periods': args.consecutive_periods,
+            'delay_seconds': args.delay,
+            'max_errors': args.max_errors
+        },
+        'estadisticas': {
+            'total_analizados': len(tickers),
+            'con_senal_alcista': len(resultados),
+            'sin_senal': len(tickers) - len(resultados)
+        },
         'resultados': resultados
     }
     
-    # Imprimir JSON final (sin mensajes de stderr)
-    print(json.dumps(resultado_final, indent=2, ensure_ascii=False))
+    # Determinar nombre del archivo de salida
+    if args.output:
+        output_file = Path(args.output)
+    else:
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        output_file = SCRIPT_DIR / f'resultados_{timestamp}.json'
+    
+    # Guardar resultados en archivo JSON
+    try:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(resultado_final, f, indent=2, ensure_ascii=False)
+        print(f"\nResultados guardados en: {output_file}", file=sys.stderr)
+        print(f"Total analizados: {len(tickers)}", file=sys.stderr)
+        print(f"Con señal alcista: {len(resultados)}", file=sys.stderr)
+    except Exception as e:
+        print(f"Error al guardar resultados: {e}", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == '__main__':
