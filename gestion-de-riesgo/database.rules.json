@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "telegramQueue": {
+      ".read": false,
+      ".write": false,
+      "pending": {
+        ".read": false,
+        ".write": false,
+        ".indexOn": ["createdAt", "nextRetryAt", "lockedAt"]
+      },
+      "sent": {
+        ".read": false,
+        ".write": false
+      },
+      "failed": {
+        ".read": false,
+        ".write": false
+      }
+    }
+  }
+}
