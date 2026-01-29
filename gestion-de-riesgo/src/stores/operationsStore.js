@@ -94,19 +94,32 @@ export const useOperationsStore = defineStore('operations', () => {
   const calculateTotalRealizedUsd = (operation, events = []) => {
     if (!operation.entryPrice) return 0
 
-    let realized = 0
+    const closingTypes = ['PARTIAL_TP', 'FINAL_TP', 'STOPLOSS', 'CLOSE_BE']
+    const closingEvents = events
+      .filter(e => closingTypes.includes(e.type) && e.price)
+      .sort((a, b) => new Date(a.date) - new Date(b.date))
 
-    events
-      .filter(e => ['PARTIAL_TP', 'FINAL_TP', 'STOPLOSS', 'CLOSE_BE'].includes(e.type) && e.price && e.sizeUsd)
-      .forEach(event => {
-        let pnl = 0
-        if (operation.direction === 'LONG') {
-          pnl = ((event.price / operation.entryPrice) - 1) * event.sizeUsd
-        } else if (operation.direction === 'SHORT') {
-          pnl = ((operation.entryPrice / event.price) - 1) * event.sizeUsd
-        }
-        realized += pnl
-      })
+    let realized = 0
+    let closedSizeSoFar = 0
+    const positionSizeUsd = operation.positionSizeUsd || 0
+
+    closingEvents.forEach(event => {
+      // Para STOPLOSS/CLOSE_BE sin sizeUsd (eventos antiguos), usar el tamaño restante en ese momento
+      let sizeUsd = event.sizeUsd
+      if ((event.type === 'STOPLOSS' || event.type === 'CLOSE_BE') && (!sizeUsd || sizeUsd <= 0)) {
+        sizeUsd = Math.max(0, positionSizeUsd - closedSizeSoFar)
+      }
+      if (!sizeUsd || sizeUsd <= 0) return
+
+      let pnl = 0
+      if (operation.direction === 'LONG') {
+        pnl = ((event.price / operation.entryPrice) - 1) * sizeUsd
+      } else if (operation.direction === 'SHORT') {
+        pnl = ((operation.entryPrice / event.price) - 1) * sizeUsd
+      }
+      realized += pnl
+      closedSizeSoFar += sizeUsd
+    })
 
     return realized
   }

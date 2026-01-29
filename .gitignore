@@ -6,3 +6,5 @@ dist
 functions/node_modules
 functions/.eslintcache
 .env
+screenshots
+pts-scraping/html

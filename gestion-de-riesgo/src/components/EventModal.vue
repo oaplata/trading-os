@@ -67,7 +67,7 @@
             />
           </div>
 
-          <!-- Tamaño (requerido para PARTIAL_TP y FINAL_TP) -->
+          <!-- Tamaño (requerido para PARTIAL_TP, FINAL_TP, STOPLOSS y CLOSE_BE) -->
           <div v-if="requiresSize">
             <label for="sizeUsd" class="block text-sm font-medium text-gray-700 mb-2">
               Tamaño Cerrado (USD) *
@@ -157,7 +157,7 @@ const requiresPrice = computed(() => {
 })
 
 const requiresSize = computed(() => {
-  return ['PARTIAL_TP', 'FINAL_TP'].includes(form.type)
+  return ['PARTIAL_TP', 'FINAL_TP', 'STOPLOSS', 'CLOSE_BE'].includes(form.type)
 })
 
 const remainingSize = computed(() => {

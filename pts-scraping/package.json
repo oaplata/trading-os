@@ -1,0 +1,15 @@
+{
+  "name": "pts-scraping",
+  "version": "1.0.0",
+  "description": "Scraper para ProTradingSkills.com",
+  "type": "module",
+  "main": "src/login.js",
+  "scripts": {
+    "login": "node src/login.js",
+    "start": "node src/login.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "puppeteer": "^23.6.0"
+  }
+}
