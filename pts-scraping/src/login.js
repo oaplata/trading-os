@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import puppeteer from 'puppeteer';
-import { mkdir, writeFile } from 'fs/promises';
+import { mkdir, writeFile, readFile } from 'fs/promises';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -9,9 +9,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const LOGIN_URL = 'https://protradingskills.com/wp-login.php';
 const SENIOR_BASE = 'https://protradingskills.com/plataforma/programas/senior';
 const SENIOR_URL = `${SENIOR_BASE}/#actualizaciones`;
-const SCREENSHOT_DIR = join(__dirname, '..', 'screenshots');
-const HTML_DIR = join(__dirname, '..', 'html');
 const DATA_DIR = join(__dirname, '..', 'data');
+/** Carpeta base donde se guarda el HTML de cada reporte: reportes/001_fecha_slug/index.html */
+const REPORTES_HTML_BASE = join(DATA_DIR, 'reportes');
 
 /** Parsea "DD/MM/YYYY a las HH:MM" o "DD/MM/YYYY" → Date. Retorna null si falla. */
 function parseReportDate(str) {
@@ -26,11 +26,21 @@ function parseReportDate(str) {
   return isNaN(date.getTime()) ? null : date;
 }
 
-/** Fecha de hace 3 meses desde hoy (misma hora). */
-function threeMonthsAgo() {
-  const d = new Date();
-  d.setMonth(d.getMonth() - 3);
-  return d;
+/** Sin límite de fecha: se extraen todos los reportes. */
+
+/** Genera un slug seguro para nombres de carpeta (sin caracteres raros, longitud limitada). */
+function slugify(text, maxLen = 50) {
+  if (!text || typeof text !== 'string') return 'sin-titulo';
+  const slug = text
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // quitar acentos (NFD)
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+  return slug.slice(0, maxLen) || 'sin-titulo';
 }
 
 function log(level, message, ...args) {
@@ -143,12 +153,6 @@ async function main() {
       log('INFO', 'Login aparentemente correcto (redirección fuera de wp-login)');
     }
 
-    log('INFO', 'Guardando screenshot en', SCREENSHOT_DIR, '...');
-    await mkdir(SCREENSHOT_DIR, { recursive: true });
-    const screenshotPath = join(SCREENSHOT_DIR, `post-login-${Date.now()}.png`);
-    await page.screenshot({ path: screenshotPath, fullPage: true });
-    log('INFO', 'Screenshot guardado:', screenshotPath);
-
     log('INFO', '=== Paso 2: Navegando a programas senior (#actualizaciones) ===');
     log('INFO', 'Navegando a', SENIOR_URL, '...');
     let seniorResponse = await page.goto(SENIOR_URL, {
@@ -169,11 +173,32 @@ async function main() {
     await new Promise((r) => setTimeout(r, 7000));
     log('INFO', 'Página estabilizada');
 
-    const cutoff = threeMonthsAgo();
-    log('INFO', 'Reportes desde (>=):', cutoff.toISOString().slice(0, 10), '(últimos 3 meses)');
+    log('INFO', 'Modo: extraer TODOS los reportes (sin límite de fecha). Procesando por página con hasta 4 pestañas en paralelo.');
 
-    await mkdir(HTML_DIR, { recursive: true });
     await mkdir(DATA_DIR, { recursive: true });
+    await mkdir(REPORTES_HTML_BASE, { recursive: true });
+
+    const GLOBAL_JSON_PATH = join(DATA_DIR, 'reportes-fecha-contenido-todos.json');
+    const PROGRESS_PATH = join(DATA_DIR, 'progress.json');
+
+    /** Carga estado previo para reanudar (progress + array de reportes ya guardados). */
+    let nextGlobalIndex = 1;
+    let reportesConContenido = [];
+    try {
+      const progressRaw = await readFile(PROGRESS_PATH, 'utf8').catch(() => null);
+      if (progressRaw) {
+        const progress = JSON.parse(progressRaw);
+        nextGlobalIndex = progress.nextGlobalIndex ?? 1;
+        log('INFO', 'Progress cargado: reanudando desde índice', nextGlobalIndex);
+      }
+      const jsonRaw = await readFile(GLOBAL_JSON_PATH, 'utf8').catch(() => null);
+      if (jsonRaw) {
+        reportesConContenido = JSON.parse(jsonRaw);
+        log('INFO', 'JSON global cargado:', reportesConContenido.length, 'reportes ya guardados');
+      }
+    } catch (e) {
+      log('WARN', 'Error leyendo progress/JSON, se empieza desde cero:', e.message);
+    }
 
     /** Extrae reportes de la página actual (actualizaciones). */
     const extractReportes = async () =>
@@ -191,53 +216,131 @@ async function main() {
         });
       });
 
-    const allReportes = [];
+    /** En una pestaña ya abierta: extrae fecha + contenido (para page.evaluate). */
+    const extractReportDetail = (p) =>
+      p.evaluate(() => {
+        const fechaEl = document.querySelector('.avatar-info-component-container .text-info.small-text');
+        const contentEl = document.querySelector('article.pts-analysis .entry-content');
+        const fecha = fechaEl?.textContent?.trim() ?? '';
+        let contenido = contentEl?.innerText?.trim() ?? '';
+        contenido = contenido.replace(/\r\n/g, '\n').replace(/\n{3,}/g, '\n\n');
+        return { fecha, contenido };
+      });
+
+    /** Procesa un solo reporte en una pestaña: navega, extrae, guarda HTML + meta, cierra pestaña. Retorna { globalIndex, fecha, contenido }. */
+    async function processOneReporte(browser, reporte, globalIndex, totalEstimate) {
+      const tab = await browser.newPage();
+      try {
+        await tab.setViewport({ width: 1280, height: 800 });
+        await tab.setUserAgent(
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        );
+        const resp = await tab.goto(reporte.url, { waitUntil: 'networkidle2', timeout: 30000 });
+        if (!resp || !resp.ok()) {
+          log('ERROR', `Reporte ${globalIndex}: error al cargar`, reporte.url, 'status', resp?.status());
+          return { globalIndex, fecha: '', contenido: '' };
+        }
+        await tab.waitForNetworkIdle({ idleTime: 1500, timeout: 20000 }).catch(() => {});
+        await new Promise((r) => setTimeout(r, 1500));
+        let extracted = { fecha: '', contenido: '' };
+        try {
+          extracted = await extractReportDetail(tab);
+        } catch (e) {
+          log('WARN', `Reporte ${globalIndex}: error extrayendo contenido:`, e.message);
+        }
+        const idxStr = String(globalIndex).padStart(3, '0');
+        const datePart = reporte.dateParsed || new Date().toISOString().slice(0, 10);
+        const slug = slugify(reporte.title || 'reporte');
+        const reporteDirName = `${idxStr}_${datePart}_${slug}`;
+        const reporteDir = join(REPORTES_HTML_BASE, reporteDirName);
+        await mkdir(reporteDir, { recursive: true });
+        const html = await tab.content();
+        await writeFile(join(reporteDir, 'index.html'), html, 'utf8');
+        await writeFile(
+          join(reporteDir, 'meta.json'),
+          JSON.stringify(
+            {
+              url: reporte.url,
+              title: reporte.title,
+              date: reporte.date,
+              dateParsed: reporte.dateParsed,
+              index: globalIndex,
+              total: totalEstimate,
+            },
+            null,
+            2
+          ),
+          'utf8'
+        );
+        log('INFO', `  [${globalIndex}] HTML guardado: ${reporteDirName}/index.html`);
+        return { globalIndex, fecha: extracted.fecha, contenido: extracted.contenido };
+      } finally {
+        await tab.close().catch(() => {});
+      }
+    }
+
+    /** Escribe el JSON global y el progress (para poder reanudar). */
+    async function persistGlobalJsonAndProgress(arr, nextIdx, lastPageNum) {
+      await writeFile(GLOBAL_JSON_PATH, JSON.stringify(arr, null, 2), 'utf8');
+      await writeFile(PROGRESS_PATH, JSON.stringify({ nextGlobalIndex: nextIdx, lastPageNum }, null, 2), 'utf8');
+    }
+
     let pageNum = 1;
     let hasMore = true;
 
+    /** Si reanudamos, ir a la página donde quedamos (la que contiene nextGlobalIndex). */
+    if (nextGlobalIndex > 1) {
+      const targetPage = Math.ceil(nextGlobalIndex / 4);
+      log('INFO', 'Reanudando: navegando a página', targetPage, '...');
+      for (let n = 1; n < targetPage; n++) {
+        const nextLink = await page.$('a.next.page-numbers');
+        if (!nextLink) break;
+        const nextHref = await nextLink.evaluate((a) => a.href);
+        seniorResponse = await page.goto(nextHref, { waitUntil: 'networkidle2', timeout: 30000 });
+        if (!seniorResponse || !seniorResponse.ok()) break;
+        await page.waitForNetworkIdle({ idleTime: 2000, timeout: 30000 }).catch(() => {});
+        await new Promise((r) => setTimeout(r, 3000));
+      }
+      pageNum = targetPage;
+    }
+
     while (hasMore) {
       const seniorUrlActual = page.url();
-      const seniorTitle = await page.title().catch(() => '(no title)');
-      log('INFO', `Página ${pageNum} | URL:`, seniorUrlActual, '| Título:', seniorTitle);
+      log('INFO', `Página ${pageNum} | URL:`, seniorUrlActual);
 
       const raw = await extractReportes();
-      log('INFO', `Extraídos ${raw.length} reportes en página ${pageNum}`);
+      if (raw.length === 0) {
+        log('INFO', 'No hay reportes en esta página, pasando a la siguiente.');
+      } else {
+        const reportesThisPage = raw.map((r) => {
+          const dat = parseReportDate(r.dateStr);
+          if (!dat) log('WARN', 'Fecha no parseada:', r.dateStr, '| title:', r.title?.slice(0, 50));
+          return {
+            url: r.href,
+            date: r.dateStr,
+            dateParsed: dat ? dat.toISOString().slice(0, 10) : '',
+            title: r.title,
+          };
+        });
 
-      let oldestOnPage = null;
-      let addedThisPage = 0;
-      for (const r of raw) {
-        const dat = parseReportDate(r.dateStr);
-        if (dat) {
-          if (dat >= cutoff) {
-            allReportes.push({
-              url: r.href,
-              date: r.dateStr,
-              dateParsed: dat.toISOString().slice(0, 10),
-              title: r.title,
-            });
-            addedThisPage += 1;
-          }
-          if (!oldestOnPage || dat < oldestOnPage) oldestOnPage = dat;
+        const startOffset = nextGlobalIndex > 1 ? (nextGlobalIndex - 1) % 4 : 0;
+        const toProcess = reportesThisPage.slice(startOffset);
+        if (toProcess.length === 0) {
+          log('INFO', `Página ${pageNum}: todos los reportes de esta página ya procesados (offset ${startOffset}).`);
         } else {
-          log('WARN', 'Fecha no parseada:', r.dateStr, '| title:', r.title?.slice(0, 50));
+          log('INFO', `Página ${pageNum}: procesando ${toProcess.length} reportes (índices ${nextGlobalIndex} a ${nextGlobalIndex + toProcess.length - 1}) en paralelo...`);
+          const results = await Promise.all(
+            toProcess.map((r, i) =>
+              processOneReporte(browser, r, nextGlobalIndex + i, reportesConContenido.length + toProcess.length)
+            )
+          );
+          results.sort((a, b) => a.globalIndex - b.globalIndex);
+          for (const { fecha, contenido } of results) {
+            reportesConContenido.push({ fecha, contenido });
+          }
+          nextGlobalIndex += results.length;
+          await persistGlobalJsonAndProgress(reportesConContenido, nextGlobalIndex, pageNum);
         }
-      }
-      log('INFO', `Página ${pageNum}: ${addedThisPage} reportes dentro de 3 meses (acumulado: ${allReportes.length})`);
-
-      const ts = Date.now();
-      const base = `senior-actualizaciones-page-${pageNum}-${ts}`;
-      const seniorScreenshotPath = join(SCREENSHOT_DIR, `${base}.png`);
-      log('INFO', 'Guardando screenshot...', seniorScreenshotPath);
-      await page.screenshot({ path: seniorScreenshotPath, fullPage: true });
-      const seniorHtmlPath = join(HTML_DIR, `${base}.html`);
-      log('INFO', 'Capturando HTML...', seniorHtmlPath);
-      const html = await page.content();
-      await writeFile(seniorHtmlPath, html, 'utf8');
-
-      if (oldestOnPage && oldestOnPage < cutoff) {
-        log('INFO', 'El reporte más antiguo de esta página ya supera 3 meses. Dejamos de paginar.');
-        hasMore = false;
-        break;
       }
 
       const nextLink = await page.$('a.next.page-numbers');
@@ -263,53 +366,11 @@ async function main() {
       pageNum += 1;
     }
 
-    log('INFO', 'Total reportes (últimos 3 meses):', allReportes.length);
-    const listPath = join(DATA_DIR, `reportes-ultimos-3-meses-${Date.now()}.json`);
-    await writeFile(listPath, JSON.stringify(allReportes, null, 2), 'utf8');
-    log('INFO', 'Lista de reportes guardada:', listPath);
+    log('INFO', 'Total reportes extraídos y guardados:', reportesConContenido.length);
+    log('INFO', 'JSON global:', GLOBAL_JSON_PATH);
+    log('INFO', 'HTML de todos los reportes en:', REPORTES_HTML_BASE);
 
-    log('INFO', '=== Paso 3: Entrando en cada reporte y extrayendo fecha + contenido ===');
-
-    const extractReportDetail = () =>
-      page.evaluate(() => {
-        const fechaEl = document.querySelector('.avatar-info-component-container .text-info.small-text');
-        const contentEl = document.querySelector('article.pts-analysis .entry-content');
-        const fecha = fechaEl?.textContent?.trim() ?? '';
-        let contenido = contentEl?.innerText?.trim() ?? '';
-        contenido = contenido.replace(/\r\n/g, '\n').replace(/\n{3,}/g, '\n\n');
-        return { fecha, contenido };
-      });
-
-    const reportesConContenido = [];
-    for (let i = 0; i < allReportes.length; i++) {
-      const r = allReportes[i];
-      log('INFO', `Reporte ${i + 1}/${allReportes.length}:`, r.url, '|', r.title?.slice(0, 50));
-      const resp = await page.goto(r.url, { waitUntil: 'networkidle2', timeout: 30000 });
-      if (!resp || !resp.ok()) {
-        log('ERROR', 'Error al cargar reporte:', r.url, 'status', resp?.status());
-        reportesConContenido.push({ fecha: '', contenido: '' });
-        continue;
-      }
-      await page.waitForNetworkIdle({ idleTime: 1500, timeout: 15000 }).catch(() => {});
-      await new Promise((res) => setTimeout(res, 2000));
-      let extracted = { fecha: '', contenido: '' };
-      try {
-        extracted = await extractReportDetail();
-      } catch (e) {
-        log('WARN', 'Error extrayendo fecha/contenido:', e.message);
-      }
-      reportesConContenido.push({
-        fecha: extracted.fecha,
-        contenido: extracted.contenido,
-      });
-    }
-
-    const outputPath = join(DATA_DIR, `reportes-fecha-contenido-${Date.now()}.json`);
-    await writeFile(outputPath, JSON.stringify(reportesConContenido, null, 2), 'utf8');
-    log('INFO', 'JSON final guardado:', outputPath, '(', reportesConContenido.length, 'reportes)');
-
-    log('INFO', '=== Paso 2 (programas senior + paginación) finalizado ===');
-    log('INFO', '=== Paso 3 (extracción fecha + contenido) finalizado ===');
+    log('INFO', '=== Paso 2 + 3 (paginación + extracción por página en paralelo) finalizado ===');
     log('INFO', '=== Scraper finalizado correctamente ===');
   } catch (err) {
     log('ERROR', 'Excepción:', err.message);
@@ -318,17 +379,14 @@ async function main() {
       try {
         const page = (await browser.pages())[0];
         if (page) {
-          const dumpPath = join(SCREENSHOT_DIR, `error-${Date.now()}.png`);
-          await mkdir(SCREENSHOT_DIR, { recursive: true });
-          await page.screenshot({ path: dumpPath, fullPage: true });
-          log('ERROR', 'Screenshot de error guardado:', dumpPath);
-          const htmlPath = join(SCREENSHOT_DIR, `error-${Date.now()}.html`);
+          const htmlPath = join(DATA_DIR, `error-${Date.now()}.html`);
+          await mkdir(DATA_DIR, { recursive: true });
           const html = await page.content();
           await writeFile(htmlPath, html, 'utf8');
           log('ERROR', 'HTML de error guardado:', htmlPath);
         }
       } catch (e) {
-        log('ERROR', 'No se pudo guardar debug (screenshot/html):', e.message);
+        log('ERROR', 'No se pudo guardar debug HTML:', e.message);
       }
     }
     process.exit(1);
